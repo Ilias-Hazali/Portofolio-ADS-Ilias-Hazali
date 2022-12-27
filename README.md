@@ -7,7 +7,8 @@
 
 ## Data collection
 ### Foodboost
-Voor het foodboost project zijn een aantal datasets beschikbaar gesteld door de opdrachtgever < variable>:
+Voor het foodboost project zijn een aantal datasets beschikbaar gesteld door de opdrachtgever:
+- [recipes.csv](
 ## Data Visualization
 
 ## Data preparation
