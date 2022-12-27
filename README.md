@@ -1,6 +1,8 @@
 # Portofolio Ilias Hazali
 ## [Datacamp Courses]()
 
+Tijdens de minor heb ik een aantal Datacamp cursussen afgerond. [Hier] kunt een overzicht bekijken van de afgeronden cursussen en de bijbehorenden scoren. 
+
 ## Domain Knowledge
 
 ## Data preparation
