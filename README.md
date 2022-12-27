@@ -1,13 +1,13 @@
 # Portofolio Ilias Hazali
-## [Datacamp Courses](https://app.datacamp.com/learn/leaderboard/minor-applied-data-science-2022)
-
-
-## Data preparation
+## [Datacamp Courses]()
 
 ## Domain Knowledge
 
-## Data collection
+## Data preparation
 
+## Data collection
+### Foodboost
+Voor het foodboost project zijn een aantal datasets beschikbaar gesteld door de opdrachtgever < variable>:
 ## Data Visualization
 
 ## Data preparation
