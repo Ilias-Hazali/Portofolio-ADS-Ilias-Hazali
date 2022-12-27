@@ -1,7 +1,7 @@
 # Portofolio Ilias Hazali
-## [Datacamp Courses](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/Datacamp%20assignement.jpg)![](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/datacamp%course%15%van%de%16.jpg)
+## [Datacamp Courses](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/Datacamp%20assignement.jpg)![](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/datacamp%20course%2015%20van%20de%2016.jpg)
 
-Tijdens de minor heb ik een aantal Datacamp cursussen afgerond. [Hier](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/Datacamp%20assignement.jpg) en [hier](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/datacamp%course%15%van%de%16.jpg) kunt een overzicht bekijken van de afgeronden cursussen en de bijbehorenden scoren. 
+Tijdens de minor heb ik een aantal Datacamp cursussen afgerond. [Hier](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/Datacamp%20assignement.jpg) en [hier](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/datacamp%20course%2015%20van%20de%2016.jpg) kunt een overzicht bekijken van de afgeronden cursussen en de bijbehorenden scoren. 
 
 ## Domain Knowledge
 
