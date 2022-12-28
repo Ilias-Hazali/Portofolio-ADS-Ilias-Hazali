@@ -53,13 +53,15 @@ Vervolgens heb alle dataset geinspecteerd en bekeken.
 ![image](https://user-images.githubusercontent.com/121435298/209832877-1fc6f5d8-1c6b-46d8-94f5-d772731981f7.png)
 De datasets zijn helaas niet direct geschikt om de voorspellingen te kunnen doen. Ik heb een aantal aanpassingen uitgevoerd op de datasets zodat ze overzichtelijker worden. Zo heb ik de kolom `Unnamed: 0` verwijdert omdat het toegevoegde waarde heeft op alle datasets.
 ![image](https://user-images.githubusercontent.com/121435298/209833690-ff9a23fc-de33-4bf3-97a4-120509f17911.png)
-Daarna heb ik gekeken naar wat ik bij elke dataset om het overzichtelijker te krijgen. Voor de dataset `ingredients` heb ik gemerkt dat elke ingrediënt van een recept op een aparte rij staat.
+Daarna heb ik gekeken naar wat ik bij elke dataset kan doen om het overzichtelijker te krijgen. Voor de dataset `ingredients` heb ik gemerkt dat elke ingrediënt van een recept op een aparte rij staat.
 
 
 ![image](https://user-images.githubusercontent.com/121435298/209853073-cd6e8f44-e784-42e5-85f6-a6b8ebf56763.png)
 
 
-Ik heb het gegroepeerd per recept en alle ingredienten op een rij geplaatst. Dat heb ik in een paar stappen gedaan. Als eerst heb ik gegroeperd per recept en vervolgend de `.agg()` methode gebruikt om de ingredienten bij elkaar te joinen. ![image](https://user-images.githubusercontent.com/121435298/209853540-b51aac7c-7273-4ab8-b8ef-5a0a20bf6ab3.png). De ingredienten staan nu bij elkaar per recepten staan allemaal bij elkaar in een kolom cel zoals te zien is op de foto hierboven. Mijn doel was daarna om elke ingrediënt in een aparte kolom te krijgen. Omdat dat niet in een keer kan, heb ik dat in een aantal stappen moeten doen. Eerst heb ik de `.str.split()` methode gebruikt op de `ingredient` kolom. Dat heeft geresulteerd in een panda serie waarin alle ingrediënten geschieden van elkaar. En dat heb ik vervolgens naar een dataframe omgezet.![image](https://user-images.githubusercontent.com/121435298/209854386-85bea458-e6ea-433e-9b7e-1ce82214ca20.png). Daarna
+Ik heb het gegroepeerd per recept en alle ingredienten op een rij geplaatst. Dat heb ik in een paar stappen gedaan. Als eerst heb ik gegroeperd per recept en vervolgend de `.agg()` methode gebruikt om de ingredienten bij elkaar te joinen.![image](https://user-images.githubusercontent.com/121435298/209857310-727e4cbe-1022-4297-ad81-79d7f8f9c4c4.png). De ingredienten staan nu bij elkaar per recepten  in een kolom cel zoals te zien is op de foto hierboven. Mijn doel was daarna om elke ingrediënt in een aparte kolom te krijgen. Omdat dat niet in een keer kan, heb ik dat in een aantal stappen moeten splitsen. Eerst heb ik de `.str.split()` methode gebruikt op de `ingredient` kolom. Dat heeft geresulteerd in een panda serie waarin alle ingrediënten geschieden van elkaar. En dat heb ik vervolgens naar een dataframe omgezet.![image](https://user-images.githubusercontent.com/121435298/209857565-d28b52ba-6f27-4525-b054-a8f2795e0de3.png). Daarna heb ik de kolom `recipe`uit de gegroepeerde dataset gefilterd. ![image](https://user-images.githubusercontent.com/121435298/209857685-d2ecc673-4b31-4e3b-b74f-17dd906162a1.png)
+Dat heb ik gedaan zodat ik later `recipe`en `recipe_ingredients` aan elkaar kan samenvoegen. Dat resulteerde in de volgende dataframe: ![image](https://user-images.githubusercontent.com/121435298/209857935-aac6dd51-ef39-4e68-b0ce-ca76e789e34f.png)
+
 
 
 
