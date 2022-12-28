@@ -19,8 +19,8 @@ Vervolgens heb ik artikelen gevonden waarin een recept recommandatie wordt gedaa
 #### Resultaat
 Nadat iedere groepslid literatuuronderzoek te hebben uitgevoerd, hebben we de onderzoeksdoel geformuleerd en dat is om voor mensen recepten aan te raden op basis van hun voorkeuren. Het is idee is een applicatie te bouwen die een tinder scherm weergeeft waar de gebruiker een aantal recepten naar links (geen voorkeur) of naar rechts (voorkeur) kan schuiven. Aan de hand van de recepten die de gebruiker als voorkeur heeft aangegeven wordt de favoriete keuken van een gebruiker bepaalt aan de hand van de ingrediënten waaruit die recepten bestaan. Vervolgens wordt, aan de hand van de ingrediënten van de gebruiker waar de voorkeurrecepten uit bestaan, een vergelijking gemaakt met de recepten binnen de voorkeurkeuken van dezelfde gebruiker en worden vier recepten aangetoond die het meest overeenkomen met de voorkeurrecepten.
 
-#### Refelctie
-In het begin ben ik niet op een geschikte ondoerzoeksdoel uitgekomen. Dat is het geval omdat ik te weinig aan literatuuronderzoek had gedaan en te haastig aan het project wou starten. Door alle verzamelde infortie op rijtje te hebben, heb ik een beter idee geregen over het onderzoek en zijn we als groep sneller op een onderzoeksdoel uitgekomen. in het vervolg zal ik geen overhaastebeslissingen nemen zonder voldoende literatuuronderzoek te hebben uitgevoerd en zal me meer verdiepen in het vinden van geralateerde onderzoek i.p.v. direct starten met het vinden van een oplossing.
+#### Reflectie
+In het begin ben ik niet op een geschikte onderzoeksdoel uitgekomen. Dat is het geval omdat ik te weinig aan literatuuronderzoek had gedaan en te haastig aan het project wou starten. Door alle verzamelde informatie op rijtje te hebben, heb ik een beter idee geregen over het onderzoek en zijn we als groep sneller op een onderzoeksdoel uitgekomen. in het vervolg zal ik geen overhaaste beslissingen nemen zonder voldoende literatuuronderzoek te hebben uitgevoerd en zal me meer verdiepen in het vinden van gerelateerde onderzoek i.p.v. direct starten met het vinden van een oplossing.
 
 ## Data collection
 ### Foodboost
@@ -35,9 +35,9 @@ Voor het foodboost project zijn een aantal datasets beschikbaar gesteld door de 
 - [containerlocationinformation.csv](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/containerlocationinformation.csv)
 - [handling.csv](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/handling.csv) een csv bestand met alle handelingen van de containers.
 - [machine.csv](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/machine.csv) een csv-bestand dat dat informatie geeft over de locatie over de containers. de locatie waar de container was en waar de container naar toe wordt verplaatst.
-- [marker.csv](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/marker.csv) een csv-bestand dat de indeling van de terminal definieert.een marker is een plaats in een stack waar je een container kan plaatsen. Alle posities en lengtes zijn in milimeters gedefinieerd.
+- [marker.csv](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/marker.csv) een csv-bestand dat de indeling van de terminal definieert. Een marker is een plaats in een stack waar je een container kan plaatsen. Alle posities en lengtes zijn in millimeters gedefinieerd.
 - [stackentry.csv](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/stackentry.csv] een csv-bestand waarin stack entry's worden gedefinieerd. een stack entry wordt uitgevoerd door stackcorrectie of handling
-- [stacks.csv](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/stacks.csv) een csv-bestand dat de indeling van de terminal definieert. Een stack is een specefieke block in een terminal. Alle posities en lengtes zijn in milimeters gedefinieerd.
+- [stacks.csv](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/stacks.csv) een csv-bestand dat de indeling van de terminal definieert. Een stack is een specifieke block in een terminal. Alle posities en lengtes zijn in millimeters gedefinieerd.
 - [readme.txt](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/readme.txt)
 
 ## Data preparation
@@ -48,7 +48,7 @@ Om het doel te kunnen behalen van het onderzoek, is een geschikte dataset nodig.
 #### Actie
 Als eerst heb ik de datasets op de notebook server geüpload. Vervolgens heb ik `pandas` gebruikt om de datasets in te lezen.
 ![image](https://user-images.githubusercontent.com/121435298/209831484-dabaa753-99d1-419b-a80f-27dce8eb3693.png)
-Vervolgens heb alle dataset geinspecteerd en bekeken.
+Vervolgens heb alle dataset geïnspecteerd en bekeken.
 ![image](https://user-images.githubusercontent.com/121435298/209832737-22526b11-1994-4d72-822d-3278b678e321.png)
 ![image](https://user-images.githubusercontent.com/121435298/209832877-1fc6f5d8-1c6b-46d8-94f5-d772731981f7.png)
 De datasets zijn helaas niet direct geschikt om de voorspellingen te kunnen doen. Ik heb een aantal aanpassingen uitgevoerd op de datasets zodat ze overzichtelijker worden. Zo heb ik de kolom `Unnamed: 0` verwijdert omdat het toegevoegde waarde heeft op alle datasets.
@@ -59,14 +59,18 @@ Daarna heb ik gekeken naar wat ik bij elke dataset kan doen om het overzichtelij
 ![image](https://user-images.githubusercontent.com/121435298/209853073-cd6e8f44-e784-42e5-85f6-a6b8ebf56763.png)
 
 
-Ik heb het gegroepeerd per recept en alle ingredienten op een rij geplaatst. Dat heb ik in een paar stappen gedaan. Als eerst heb ik gegroeperd per recept en vervolgend de `.agg()` methode gebruikt om de ingredienten bij elkaar te joinen.![image](https://user-images.githubusercontent.com/121435298/209857310-727e4cbe-1022-4297-ad81-79d7f8f9c4c4.png)De ingredienten staan nu bij elkaar per recepten  in een kolom cel zoals te zien is op de foto hierboven. Mijn doel was daarna om elke ingrediënt in een aparte kolom te krijgen. Omdat dat niet in een keer kan, heb ik dat in een aantal stappen moeten splitsen. Eerst heb ik de `.str.split()` methode gebruikt op de `ingredient` kolom. Dat heeft geresulteerd in een panda serie waarin alle ingrediënten geschieden van elkaar. En dat heb ik vervolgens naar een dataframe omgezet.![image](https://user-images.githubusercontent.com/121435298/209857565-d28b52ba-6f27-4525-b054-a8f2795e0de3.png) Daarna heb ik de kolom `recipe`uit de gegroepeerde dataset gefilterd. ![image](https://user-images.githubusercontent.com/121435298/209864011-88b8114e-4fd0-4bd1-b3bc-e81c04002f9d.png)
-Dat heb ik gedaan zodat ik later `recipe`en `recipe_ingredients` aan elkaar kan samenvoegen. Dat resulteerde in het volgende dataframe: ![image](https://user-images.githubusercontent.com/121435298/209864064-7352a098-01d1-40e6-95a2-976e54a1a01b.png)
+Ik heb het gegroepeerd per recept en alle ingrediënten op een rij geplaatst. Dat heb ik in een paar stappen gedaan. Als eerst heb ik gegroepeerd per recept en vervolgend de `.agg()` methode gebruikt om de ingrediënten bij elkaar te joinen.![image](https://user-images.githubusercontent.com/121435298/209857310-727e4cbe-1022-4297-ad81-79d7f8f9c4c4.png)De ingrediënten staan nu bij elkaar per recepten  in een kolom cel zoals te zien is op de foto hierboven. Mijn doel was daarna om elke ingrediënt in een aparte kolom te krijgen. Omdat dat niet in een keer kan, heb ik dat in een aantal stappen moeten splitsen. Eerst heb ik de `.str.split()` methode gebruikt op de `ingredient` kolom. Dat heeft geresulteerd in een panda serie waarin alle ingrediënten geschieden van elkaar. En dat heb ik vervolgens naar een dataframe omgezet.![image](https://user-images.githubusercontent.com/121435298/209857565-d28b52ba-6f27-4525-b054-a8f2795e0de3.png) Daarna heb ik de kolom `recipe` uit de gegroepeerde dataset gefilterd. ![image](https://user-images.githubusercontent.com/121435298/209864011-88b8114e-4fd0-4bd1-b3bc-e81c04002f9d.png)
+Dat heb ik gedaan zodat ik later `recipe` en `recipe_ingredients` aan elkaar kan samenvoegen. Dat resulteerde in het volgende dataframe: ![image](https://user-images.githubusercontent.com/121435298/209864064-7352a098-01d1-40e6-95a2-976e54a1a01b.png)
 
-Voor de `tags`dataset heb ik bijna het zelfde gedaan. Eerst heb ik de kolom `Unnamed: 0` verwijdert daarna gegroepeerd met recipe en de tags bij elkaar gejoind en dat heeft geresulteerd in het volgende dataframe: ![image](https://user-images.githubusercontent.com/121435298/209864281-8c3bf52b-0378-48f8-8ccb-a3eeb58ad8b4.png)
+Voor de `tags` dataset heb ik bijna het zelfde gedaan. Eerst heb ik de kolom `Unnamed: 0` verwijdert daarna gegroepeerd met recipe en de tags bij elkaar samen gevoegd en dat heeft geresulteerd in het volgende dataframe: ![image](https://user-images.githubusercontent.com/121435298/209864281-8c3bf52b-0378-48f8-8ccb-a3eeb58ad8b4.png)
 
-Ik heb nu een dataset gecreerd waar de recepten met de bijbehorende tags en ingrediënten. Helaas kan ik met de dataset nog geen voorspellingen doen omdat de benodigde dataset uit `1` en `0`moet bestaan of categorische varaiabelen. Milan had op het moment dat ik nog bezig was met de data voor te bereiden al een dataset klaarstaan die we later hebben gebruikt om voorspellingen te kunnen doen en die ziet er als volgt uit: 
+Ik heb nu een dataset gecreëerd waar de recepten met de bijbehorende tags en ingrediënten. Helaas kan ik met de dataset nog geen voorspellingen doen omdat de benodigde dataset uit `1` en `0`moet bestaan of categorische variabelen. Milan had op het moment dat ik nog bezig was met de data voor te bereiden al een dataset klaarstaan die we later hebben gebruikt om voorspellingen te kunnen doen en die ziet er als volgt uit: 
 ![image](https://user-images.githubusercontent.com/121435298/209865456-02036aee-fad3-4711-a39f-8f98d8ed578f.png)
 Deze dataset heeft de juiste formaat om de voorspellingen te kunnen doen.
+
+#### Reflectie
+Op het moment dat Milan de gebruikerssimulatie al klaar had staan, had ik het gevoel dat ik over te weinig `pandas` kennis beschik. Ik ben sindsdien meer Datacamp courses uitgevoerd zodat ik mijn programmeer vaardigheden kan verbeteren. Ik heb veel geoefend met dataframes en ik heb nieuwe `pandas` technieken wat mij heeft geholpen verder te werken aan de datasets. In het vervolg zal ik dezelfde methode aanhouden op het moment dat ik over te weinig kennis beschik om een onderzoek te kunnen uitvoeren.
+
 
 
 
