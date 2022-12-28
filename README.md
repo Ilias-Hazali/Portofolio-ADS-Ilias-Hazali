@@ -55,6 +55,8 @@ De datasets zijn helaas niet direct geschikt om de voorspellingen te kunnen doen
 ![image](https://user-images.githubusercontent.com/121435298/209833690-ff9a23fc-de33-4bf3-97a4-120509f17911.png)
 Daarna heb ik gekeken naar wat ik bij elke dataset om het overzichtelijker te krijgen. Voor de dataset `ingredients` heb ik gemerkt dat elke ingrediënt van een recept op een aparte rij staat.
 ![image](https://user-images.githubusercontent.com/121435298/209853073-cd6e8f44-e784-42e5-85f6-a6b8ebf56763.png)
+
+
 Ik heb het gegroepeerd per recept en alle ingredienten op een rij geplaatst. Dat heb ik in een paar stappen gedaan. Als eerst heb ik gegroeperd per recept en vervolgend de `.agg()` methode gebruikt om de ingredienten bij elkaar te joinen. ![image](https://user-images.githubusercontent.com/121435298/209853540-b51aac7c-7273-4ab8-b8ef-5a0a20bf6ab3.png). De ingredienten staan nu bij elkaar per recepten staan allemaal bij elkaar in een kolom cel zoals te zien is op de foto hierboven. Mijn doel was daarna om elke ingrediënt in een aparte kolom te krijgen. Omdat dat niet in een keer kan, heb ik dat in een aantal stappen moeten doen. Eerst heb ik de `.str.split()` methode gebruikt op de `ingredient` kolom. Dat heeft geresulteerd in een panda serie waarin alle ingrediënten geschieden van elkaar. En dat heb ik vervolgens naar een dataframe omgezet.![image](https://user-images.githubusercontent.com/121435298/209854386-85bea458-e6ea-433e-9b7e-1ce82214ca20.png). Daarna
 
 
