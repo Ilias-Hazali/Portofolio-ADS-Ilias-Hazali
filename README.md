@@ -83,24 +83,24 @@ Vervolgens de kolom 'user_id' verwijdert omdat het geen toegevoegde waarde had o
 
 ![image](https://user-images.githubusercontent.com/121435298/211158555-943b4a4f-d2f2-4f86-8c9b-86ed100f1311.png)
 
-Daarna heb ik de som genomen van alle rijen van de dataset om te kijken hoe vaak een ingredïent/tag voorkomt. Daarbij bleek dat 542 ingredienten/tags een totaal hadden die lager dan 40 is.  
+Daarna heb ik de som genomen van alle rijen van de dataset om te kijken hoe vaak een ingredïent/tag voorkomt. Ik heb daarbij een plot gemaakt die de frequenties duidelijk zou weergeven, maar door de grote aantal kolom die de dataset bevat is het zeer onoverzichtelijk geworden en heb ik besloten om het op een andere manier te doen.
+
+![image](https://user-images.githubusercontent.com/121435298/211161488-9f7dc567-8761-431a-bf17-3f0fc906f3e3.png)
+
+
+Er bleek dat 542 van de 847 ingredienten/tags een totaal hadden die lager zijn dan 40. Na het verwijderen van al die kolommen hielden we 304 ingrediënten die vaker voorkomen en die we konden gebruiken om voorspellingen te doen. 
 
 ![image](https://user-images.githubusercontent.com/121435298/211158870-27cf72c1-b911-4cdb-be68-056578f93f30.png)
 
+De andere kolomen heb ik een lijst gezet en verwijdert uit de oorspronkelijke dataset.
 
+![image](https://user-images.githubusercontent.com/121435298/211161327-5e70d952-f37b-449e-a4a6-3c28ef2033df.png)
 
-
-
-
-
-
-
-Zo heb ik, na de feedback van meneer Vurens, de kolomen die mogelijk een grote invloed zouden hebben op de juistheid van de voorspellingen. ![image](https://user-images.githubusercontent.com/121435298/211155991-01e7d3b8-705e-4ce0-a67d-27d38d66fa8c.png)
-De dataset had ook een kolom 'liked_recipes' waarvan de meeste waarden 'Nan' en die heb ik voor de zelfde reden verwijdert.![image](https://user-images.githubusercontent.com/121435298/211156194-5d0c7c88-e83e-4bad-b066-1803bcab6f9e.png)
+![image](https://user-images.githubusercontent.com/121435298/211161337-b282b4f9-b783-4dd4-a894-60cd7836be2e.png)
 
 
 #### Reflectie
-Op het moment dat Milan de gebruikerssimulatie al klaar had staan, had ik het gevoel dat ik over te weinig `pandas` kennis beschik. Ik ben sindsdien meer Datacamp courses uitgevoerd zodat ik mijn programmeer vaardigheden kan verbeteren. Ik heb veel geoefend met dataframes en ik heb nieuwe `pandas` technieken wat mij heeft geholpen verder te werken aan de datasets. In het vervolg zal ik dezelfde methode aanhouden op het moment dat ik over te weinig kennis beschik om een onderzoek te kunnen uitvoeren. 
+Op het moment dat Milan de gebruikerssimulatie al klaar had staan, had ik het gevoel dat ik over te weinig `pandas` kennis beschik. Ik ben sindsdien meer Datacamp courses uitgevoerd zodat ik mijn programmeer vaardigheden kan verbeteren. Ik heb veel geoefend met dataframes en ik heb nieuwe `pandas` technieken wat mij heeft geholpen verder te werken aan de dataset. Zo heb ik geleerd hoe ik dataframes beter kan bewerken door ze eerst goed te inspecteren en te prepareren en in het vervolg zal ik dezelfde methode aanhouden op het moment dat ik over te weinig kennis beschik om een onderzoek te kunnen uitvoeren. 
 
 
 
