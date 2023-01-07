@@ -65,9 +65,10 @@ Dat heb ik gedaan zodat ik later `recipe` en `recipe_ingredients` aan elkaar kan
 Voor de `tags` dataset heb ik bijna het zelfde gedaan. Eerst heb ik de kolom `Unnamed: 0` verwijdert daarna gegroepeerd met recipe en de tags bij elkaar samen gevoegd en dat heeft geresulteerd in het volgende dataframe: ![image](https://user-images.githubusercontent.com/121435298/209864281-8c3bf52b-0378-48f8-8ccb-a3eeb58ad8b4.png)
 
 Ik heb nu een dataset gecreëerd waar de recepten met de bijbehorende tags en ingrediënten. Helaas kan ik met de dataset nog geen voorspellingen doen omdat de benodigde dataset uit `1` en `0` moet bestaan of categorische variabelen. Milan had op het moment dat ik nog bezig was met de data voor te bereiden al een dataset klaarstaan die we later hebben gebruikt om voorspellingen te kunnen doen en die ziet er als volgt uit: 
-![image](https://user-images.githubusercontent.com/121435298/211055558-4c2ffdb0-3038-47b3-9ccd-409f09576ef8.png) 
+![image](https://user-images.githubusercontent.com/121435298/211157890-ee16ddef-0a97-4bc6-933e-23f3c3ed7b93.png)
 De [dataset](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/final_userdata_min_40.csv) heeft de juiste formaat om de voorspellingen te kunnen doen maar is niet heeft nog wel aanpassingen nodig om goede voorspellingen mee te kunnen doen. Zo heb ik, na de feedback van meneer Vurens, de kolomen die mogelijk een grote invloed zouden hebben op de juistheid van de voorspellingen. ![image](https://user-images.githubusercontent.com/121435298/211155991-01e7d3b8-705e-4ce0-a67d-27d38d66fa8c.png)
- 
+De dataset had ook een kolom 'liked_recipes' waarvan de meeste waarden 'Nan' en die heb ik voor de zelfde reden verwijdert.![image](https://user-images.githubusercontent.com/121435298/211156194-5d0c7c88-e83e-4bad-b066-1803bcab6f9e.png)
+
 
 #### Reflectie
 Op het moment dat Milan de gebruikerssimulatie al klaar had staan, had ik het gevoel dat ik over te weinig `pandas` kennis beschik. Ik ben sindsdien meer Datacamp courses uitgevoerd zodat ik mijn programmeer vaardigheden kan verbeteren. Ik heb veel geoefend met dataframes en ik heb nieuwe `pandas` technieken wat mij heeft geholpen verder te werken aan de datasets. In het vervolg zal ik dezelfde methode aanhouden op het moment dat ik over te weinig kennis beschik om een onderzoek te kunnen uitvoeren. 
