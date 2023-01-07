@@ -65,7 +65,7 @@ Dat heb ik gedaan zodat ik later `recipe` en `recipe_ingredients` aan elkaar kan
 Voor de `tags` dataset heb ik bijna het zelfde gedaan. Eerst heb ik de kolom `Unnamed: 0` verwijdert daarna gegroepeerd met recipe en de tags bij elkaar samen gevoegd en dat heeft geresulteerd in het volgende dataframe: ![image](https://user-images.githubusercontent.com/121435298/209864281-8c3bf52b-0378-48f8-8ccb-a3eeb58ad8b4.png)
 
 Ik heb nu een dataset gecreëerd waar de recepten met de bijbehorende tags en ingrediënten. Helaas kan ik met de dataset nog geen voorspellingen doen omdat de benodigde dataset uit `1` en `0` moet bestaan of categorische variabelen. Milan had op het moment dat ik nog bezig was met de data voor te bereiden al een dataset klaarstaan die we later hebben gebruikt om voorspellingen te kunnen doen en die ziet er als volgt uit: 
-![image](https://user-images.githubusercontent.com/121435298/211055558-4c2ffdb0-3038-47b3-9ccd-409f09576ef8.png) [volledige dataset]
+![image](https://user-images.githubusercontent.com/121435298/211055558-4c2ffdb0-3038-47b3-9ccd-409f09576ef8.png) [volledige dataset] (https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/final_userdata_min_40.csv)
 Deze dataset heeft de juiste formaat om de voorspellingen te kunnen doen maar het is nog niet klaa
 
 #### Reflectie
