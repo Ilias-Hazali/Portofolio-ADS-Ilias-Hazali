@@ -47,12 +47,18 @@ Om het doel te kunnen behalen van het onderzoek, is een geschikte dataset nodig.
 
 #### Actie
 Als eerst heb ik de datasets op de notebook server geüpload. Vervolgens heb ik `pandas` gebruikt om de datasets in te lezen.
+
 ![image](https://user-images.githubusercontent.com/121435298/209831484-dabaa753-99d1-419b-a80f-27dce8eb3693.png)
+
 Vervolgens heb alle dataset geïnspecteerd en bekeken.
+
 ![image](https://user-images.githubusercontent.com/121435298/209832737-22526b11-1994-4d72-822d-3278b678e321.png)
 ![image](https://user-images.githubusercontent.com/121435298/209832877-1fc6f5d8-1c6b-46d8-94f5-d772731981f7.png)
+
 De datasets zijn helaas niet direct geschikt om de voorspellingen te kunnen doen. Ik heb een aantal aanpassingen uitgevoerd op de datasets zodat ze overzichtelijker worden. Zo heb ik de kolom `Unnamed: 0` verwijdert omdat het toegevoegde waarde heeft op alle datasets.
+
 ![image](https://user-images.githubusercontent.com/121435298/209833690-ff9a23fc-de33-4bf3-97a4-120509f17911.png)
+
 Daarna heb ik gekeken naar wat ik bij elke dataset kan doen om het overzichtelijker te krijgen. Voor de dataset `ingredients` heb ik gemerkt dat elke ingrediënt van een recept op een aparte rij staat.
 
 
