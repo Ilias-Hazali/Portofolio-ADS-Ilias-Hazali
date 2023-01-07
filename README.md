@@ -72,7 +72,7 @@ Eerst heb ik de dataset geupload en geïnspecteerd.
 Vervolgens de kolom 'user_id' verwijdert omdat het geen toegevoegde waarde had op de dataset.
 ![image](https://user-images.githubusercontent.com/121435298/211158555-943b4a4f-d2f2-4f86-8c9b-86ed100f1311.png)
 Daarna heb ik de som genomen van alle rijen van de dataset om te kijken hoe vaak een ingredïent/tag voorkomt. Daarbij bleek dat 542 ingredienten/tags een totaal hadden die lager dan 40 is.  
-![image](https://user-images.githubusercontent.com/121435298/211158698-eca502f2-e7cc-4a1e-900d-d969166224eb.png)
+![image](https://user-images.githubusercontent.com/121435298/211158870-27cf72c1-b911-4cdb-be68-056578f93f30.png)
 
 
 
