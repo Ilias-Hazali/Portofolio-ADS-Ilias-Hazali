@@ -66,7 +66,23 @@ Voor de `tags` dataset heb ik bijna het zelfde gedaan. Eerst heb ik de kolom `Un
 
 Ik heb nu een dataset gecreëerd waar de recepten met de bijbehorende tags en ingrediënten. Helaas kan ik met de dataset nog geen voorspellingen doen omdat de benodigde dataset uit `1` en `0` moet bestaan of categorische variabelen. Milan had op het moment dat ik nog bezig was met de data voor te bereiden al een dataset klaarstaan die we later hebben gebruikt om voorspellingen te kunnen doen en die ziet er als volgt uit: 
 ![image](https://user-images.githubusercontent.com/121435298/211157890-ee16ddef-0a97-4bc6-933e-23f3c3ed7b93.png)
-De [dataset](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/final_userdata_min_40.csv) heeft de juiste formaat om de voorspellingen te kunnen doen maar is niet heeft nog wel aanpassingen nodig om goede voorspellingen mee te kunnen doen. Zo heb ik, na de feedback van meneer Vurens, de kolomen die mogelijk een grote invloed zouden hebben op de juistheid van de voorspellingen. ![image](https://user-images.githubusercontent.com/121435298/211155991-01e7d3b8-705e-4ce0-a67d-27d38d66fa8c.png)
+De [dataset](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/userdata.csv) heeft de juiste formaat om de voorspellingen te kunnen doen. Maar na  het inspecteren, bleek dat de dataset nog wel aanpassingen nodig had om goede voorspellingen te kunnen doen. Zo hebben we besloten om de ingredienten en de tags waarvan de som van de rij niet mee te nemen bij de voorspellingen. Dat heb ik als volgt gedaan:
+Eerst heb ik de dataset geupload en geïnspecteerd.
+![image](https://user-images.githubusercontent.com/121435298/211158440-79379e8c-d047-45f1-929d-1d2372c5beeb.png)
+Vervolgens de kolom 'user_id' verwijdert omdat het geen toegevoegde waarde had op de dataset.
+![image](https://user-images.githubusercontent.com/121435298/211158555-943b4a4f-d2f2-4f86-8c9b-86ed100f1311.png)
+Daarna heb ik de som genomen van alle rijen van de dataset om te kijken hoe vaak een ingredïent/tag voorkomt. Daarbij bleek dat 542 ingredienten/tags een totaal hadden die lager dan 40 is.  
+![image](https://user-images.githubusercontent.com/121435298/211158698-eca502f2-e7cc-4a1e-900d-d969166224eb.png)
+
+
+
+
+
+
+
+
+
+Zo heb ik, na de feedback van meneer Vurens, de kolomen die mogelijk een grote invloed zouden hebben op de juistheid van de voorspellingen. ![image](https://user-images.githubusercontent.com/121435298/211155991-01e7d3b8-705e-4ce0-a67d-27d38d66fa8c.png)
 De dataset had ook een kolom 'liked_recipes' waarvan de meeste waarden 'Nan' en die heb ik voor de zelfde reden verwijdert.![image](https://user-images.githubusercontent.com/121435298/211156194-5d0c7c88-e83e-4bad-b066-1803bcab6f9e.png)
 
 
