@@ -102,8 +102,13 @@ De andere kolomen heb ik een lijst gezet en verwijdert uit de oorspronkelijke da
 
 Klik [hier](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/userdata%20preparation.pdf) om de volledige pdf versie te bekijken van de aanpassing op de dataset die Milan heeft gecreerd.
 
+Later zijn we nog doorgegaan met een andere dataset die uit meer rijen bestond en minder kolommen bevatte. Dat laatste komt doordat we de dataset hebben gefilterd en we hebben gekozen om door te gaan met data van de wereldkeukens die het meest voorkomen.
+![image](https://user-images.githubusercontent.com/121435298/211208845-32b2be4e-055b-4fef-b126-58eb6b7ca9f2.png)
+
+
+
 #### Reflectie
-Op het moment dat Milan de gebruikerssimulatie al klaar had staan, had ik het gevoel dat ik over te weinig `pandas` kennis beschik. Ik ben sindsdien meer Datacamp courses uitgevoerd zodat ik mijn programmeer vaardigheden kan verbeteren. Ik heb veel geoefend met dataframes en ik heb nieuwe `pandas` technieken wat mij heeft geholpen verder te werken aan de dataset. Zo heb ik geleerd hoe ik dataframes beter kan bewerken door ze eerst goed te inspecteren en te prepareren en in het vervolg zal ik dezelfde methode aanhouden op het moment dat ik over te weinig kennis beschik om een onderzoek te kunnen uitvoeren. 
+Op het moment dat Milan de gebruikerssimulatie al klaar had staan, had ik het gevoel dat ik over te weinig `pandas` kennis beschik. Ik heb sindsdien meer Datacamp courses uitgevoerd zodat ik mijn programmeer vaardigheden kan verbeteren. Ik heb veel geoefend met dataframes en ik heb nieuwe `pandas` technieken wat mij heeft geholpen verder te werken aan de dataset. Zo heb ik geleerd hoe ik dataframes beter kan bewerken door ze eerst goed te inspecteren en te prepareren en in het vervolg zal ik dezelfde methode aanhouden op het moment dat ik over te weinig kennis beschik om een onderzoek te kunnen uitvoeren. 
 
 
 ## Predictive Models
