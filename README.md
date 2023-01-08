@@ -102,7 +102,7 @@ De andere kolomen heb ik een lijst gezet en verwijdert uit de oorspronkelijke da
 
 Klik [hier](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/userdata%20preparation.pdf) om de volledige pdf versie te bekijken van de aanpassing op de dataset die Milan heeft gecreerd.
 
-Later zijn we nog doorgegaan met een andere dataset die uit meer rijen bestond en minder kolommen bevatte. Dat laatste komt doordat we de dataset hebben gefilterd en we hebben gekozen om door te gaan met data van de wereldkeukens die het meest voorkomen.
+Later zijn we nog doorgegaan met een andere [dataset](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/final_userdata_min_40.csv) die uit meer rijen bestond en minder kolommen bevatte. Dat laatste komt doordat we de dataset hebben gefilterd en gekozen hebben om door te gaan met de data van wereldkeukens die het meest voorkomen.
 ![image](https://user-images.githubusercontent.com/121435298/211208845-32b2be4e-055b-4fef-b126-58eb6b7ca9f2.png)
 
 
