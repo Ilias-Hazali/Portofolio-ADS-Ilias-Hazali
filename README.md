@@ -100,12 +100,13 @@ De andere kolomen heb ik een lijst gezet en verwijdert uit de oorspronkelijke da
 ![image](https://user-images.githubusercontent.com/121435298/211161337-b282b4f9-b783-4dd4-a894-60cd7836be2e.png)
 
 
-Klik [hier](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/userdata%20preparation.pdf) om de volledige pdf versie te bekijken van de aanpassing op Milan de dataset
+Klik [hier](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/userdata%20preparation.pdf) om de volledige pdf versie te bekijken van de aanpassing op de dataset die Milan heeft gecreerd.
 
 #### Reflectie
 Op het moment dat Milan de gebruikerssimulatie al klaar had staan, had ik het gevoel dat ik over te weinig `pandas` kennis beschik. Ik ben sindsdien meer Datacamp courses uitgevoerd zodat ik mijn programmeer vaardigheden kan verbeteren. Ik heb veel geoefend met dataframes en ik heb nieuwe `pandas` technieken wat mij heeft geholpen verder te werken aan de dataset. Zo heb ik geleerd hoe ik dataframes beter kan bewerken door ze eerst goed te inspecteren en te prepareren en in het vervolg zal ik dezelfde methode aanhouden op het moment dat ik over te weinig kennis beschik om een onderzoek te kunnen uitvoeren. 
 
 
+## Predictive Models
 
 
 
@@ -117,7 +118,7 @@ Op het moment dat Milan de gebruikerssimulatie al klaar had staan, had ik het ge
 
 ## Data Visualization
 
-## Predictive Models
+
 
 ## Diagnostics of the learning process
 
