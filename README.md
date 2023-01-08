@@ -42,7 +42,7 @@ Voor het foodboost project zijn een aantal datasets beschikbaar gesteld door de 
 
 ## Data preparation
 ### Food Boost
-#### [Eigen dataset gesimuleerd] 
+#### [Eigen dataset gesimuleerd](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/zelf%20een%20Dataset%20simuleren.pdf)
 #### Situatie
 Om het doel te kunnen behalen van het onderzoek, is een geschikte dataset nodig. Aan de hand van die dataset, moet de voorkeurkeuken van elke gebruiker voorspeld kunnen worden. De dataset dient een gebruikerssimulatie te zijn waarin voor elke gebruiker bekend is wat zijn voorkeurkeuken is en de ingrediënten staan van alle recepten die de gebruiker als voorkeur heeft meegegeven.
 
