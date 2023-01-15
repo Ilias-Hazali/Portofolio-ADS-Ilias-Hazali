@@ -42,7 +42,7 @@ Voor het foodboost project zijn een aantal datasets beschikbaar gesteld door de 
 
 ## Data preparation
 ### Food Boost
-#### [Eigen dataset gesimuleerd](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/zelf%20een%20Dataset%20simuleren.pdf)
+#### [Eigen dataset gesimuleerd](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/zelf%20Dataset%20simuleren%20final%20pdf.pdf)
 #### Situatie
 Om het doel te kunnen behalen van het onderzoek, is een geschikte dataset nodig. Aan de hand van die dataset, moet de voorkeurkeuken van elke gebruiker voorspeld kunnen worden. De dataset dient een gebruikerssimulatie te zijn waarin voor elke gebruiker bekend is wat zijn voorkeurkeuken is en de ingrediënten staan van alle recepten die de gebruiker als voorkeur heeft meegegeven.
 
@@ -51,10 +51,11 @@ Als eerst heb ik de datasets op de notebook server geüpload. Vervolgens heb ik 
 
 ![image](https://user-images.githubusercontent.com/121435298/209831484-dabaa753-99d1-419b-a80f-27dce8eb3693.png)
 
-Vervolgens heb alle dataset geïnspecteerd en bekeken.
+Vervolgens heb alle dataset geïnspecteerd en bekeken. Daarbij heb ik gekeken naar de datatype van alle elementen en vervolgens heb ik gekeken of er velden zijn waarvan de waarde ontbrak.
 
 ![image](https://user-images.githubusercontent.com/121435298/209832737-22526b11-1994-4d72-822d-3278b678e321.png)
 ![image](https://user-images.githubusercontent.com/121435298/209832877-1fc6f5d8-1c6b-46d8-94f5-d772731981f7.png)
+![image](https://user-images.githubusercontent.com/121435298/212538394-99d3d5c7-c1cb-4a9d-8188-6d156afd6dbc.png)
 
 De datasets zijn helaas niet direct geschikt om de voorspellingen te kunnen doen. Ik heb een aantal aanpassingen uitgevoerd op de datasets zodat ze overzichtelijker worden. Zo heb ik de kolom `Unnamed: 0` verwijdert omdat het toegevoegde waarde heeft op alle datasets.
 
