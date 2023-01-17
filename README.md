@@ -76,7 +76,7 @@ Ik heb nu een dataset gecreëerd waar de recepten met de bijbehorende tags en in
 
 ![image](https://user-images.githubusercontent.com/121435298/211157890-ee16ddef-0a97-4bc6-933e-23f3c3ed7b93.png)
 
-De [dataset](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/final_userdata_min_40.csv) heeft de juiste formaat om de voorspellingen te kunnen doen. Maar na  het inspecteren, bleek dat de dataset nog wel aanpassingen nodig had om goede voorspellingen te kunnen doen. Zo hebben we besloten om de ingredienten en de tags waarvan de som van de rij lager zijn dan 40 niet te gebruiken om voorspellingen mee te kunnen doen. Dat heb ik als volgt gedaan:
+De [dataset](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/userdata.csv) heeft de juiste formaat om de voorspellingen te kunnen doen. Maar na  het inspecteren, bleek dat de dataset nog wel aanpassingen nodig had om goede voorspellingen te kunnen doen. Zo hebben we besloten om de ingredienten en de tags waarvan de som van de rij lager zijn dan 40 niet te gebruiken om voorspellingen mee te kunnen doen. Dat heb ik als volgt gedaan:
 Eerst heb ik de dataset geupload en geïnspecteerd.
 
 ![image](https://user-images.githubusercontent.com/121435298/211158440-79379e8c-d047-45f1-929d-1d2372c5beeb.png)
