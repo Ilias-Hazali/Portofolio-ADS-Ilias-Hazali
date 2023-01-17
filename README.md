@@ -124,7 +124,7 @@ Omdat de doelvariabele een categorische variabele is, heb ik besloten om het om 
 ![image](https://user-images.githubusercontent.com/121435298/212978625-e94b3385-0c1f-4db6-891f-7b813e60e321.png)
 
 Dat heb ik als volgt gedaan:
-![image](https://user-images.githubusercontent.com/121435298/212978832-4632f105-37ec-48ff-89ce-1f9afee13c77.png) ![image](https://user-images.githubusercontent.com/121435298/212978878-72f49850-f142-4362-ad2f-cb47205cbdc2.png)
+![image](https://user-images.githubusercontent.com/121435298/212978832-4632f105-37ec-48ff-89ce-1f9afee13c77.png)![image](https://user-images.githubusercontent.com/121435298/212978878-72f49850-f142-4362-ad2f-cb47205cbdc2.png)
 
 
 
