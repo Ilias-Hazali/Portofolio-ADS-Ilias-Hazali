@@ -114,6 +114,8 @@ Op het moment dat Milan de gebruikerssimulatie al klaar had staan, had ik het ge
 
 ## Predictive Models
 
+Het idee is dus om de favoriete keuken van een gebruiker te voorspellen zodat er een goede aanbeveling wordt gedaan binnen de voorspelde keuken. Daarvoor is een model benodigd die de juiste keuken van elke gebruiker kan vooorspellen. We hebben dus te maken met een classificatie en de bedeoling is om de favoriete keuken te voorspellen aan de hand van de ingrediënten die de recepten bevatten die gebruiker als voorkeu heeft meegegeven. Na literatuuronderzoek te hebben gedaan over de verschillende classificatie modellen, heb ik gekozen om de KNeighbors-classificatie model te testen op ons gesimuleeerde [dataset] (https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/final_userdata_min_40.csv). De
+![image](https://user-images.githubusercontent.com/121435298/212939500-b5e0a0f6-dacf-4069-9e38-b8a5f6821a55.png)
 
 
 
