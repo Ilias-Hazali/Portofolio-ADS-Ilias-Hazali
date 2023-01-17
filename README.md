@@ -114,18 +114,27 @@ Op het moment dat Milan de gebruikerssimulatie al klaar had staan, had ik het ge
 
 ## Predictive Models
 
-Het idee is dus om de favoriete keuken van een gebruiker te voorspellen zodat er een goede aanbeveling wordt gedaan binnen de voorspelde keuken. Daarvoor is een model benodigd die de juiste keuken van elke gebruiker kan vooorspellen. Na de dataset te hebben geinspeceteerd en de doelvariabele te hebben gedefinieerd, is er uitgerold dat we hier te maken hebben met een classicatie. De bedoeling is om de kolom 'kitchen' te voorspellen aan de hand van de ingrediënten die de recepten bevatten die gebruiker als voorkeur heeft meegegeven. Na literatuuronderzoek te hebben gedaan over de verschillende classificatie modellen, heb ik gekozen om de KNeighbors-classificatie model te testen op ons gesimuleeerde [dataset] (https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/final_userdata_min_40.csv). 
+Het idee is dus om de favoriete keuken van een gebruiker te voorspellen zodat er een goede aanbeveling wordt gedaan binnen de voorspelde keuken. Daarvoor is een model benodigd die de juiste keuken van elke gebruiker kan vooorspellen. Na de dataset te hebben geinspeceteerd en de doelvariabele te hebben gedefinieerd, is er uitgerold dat we hier te maken hebben met een classicatie. Volgens [askpython](https://www.askpython.com/python/regression-vs-classification) , dient bij een categorische output een classificatie model gebruikt te worden om voorspellingen te kunnen doen.
+
+De bedoeling is om de kolom 'kitchen' te voorspellen aan de hand van de ingrediënten die de recepten bevatten die gebruiker als voorkeur heeft meegegeven. Na literatuuronderzoek te hebben gedaan, bleek dat er verschillende [classificatie modellen](https://monkeylearn.com/blog/what-is-a-classifier/) bestaan. Ik heb gekozen om de KNeighbors-classificatie model te testen op ons gesimuleeerde [dataset] (https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/final_userdata_min_40.csv). 
 ![image](https://user-images.githubusercontent.com/121435298/212939500-b5e0a0f6-dacf-4069-9e38-b8a5f6821a55.png)
 
 De dataset heb ik geimporteerd en geinspecteerd en vervolgens de kolomen van alle keukenstypes verwijdert. Ook heb ik de kolom "liked_recipes" verwijderd.
 ![image](https://user-images.githubusercontent.com/121435298/212973707-e49238fd-9322-4142-9a3a-bd563abc945d.png)
 
-Omdat de doelvariabele een categorische variabele is, heb ik besloten om het om te zetten naar een nummerieke variabele.
+Omdat de doelvariabele een categorische variabele is, heb ik besloten om het om te zetten naar een nummerieke variabele. (Dat resulteerde namelijk op beter voorspellingen op X_val)
 ![image](https://user-images.githubusercontent.com/121435298/212978625-e94b3385-0c1f-4db6-891f-7b813e60e321.png)
 
 Dat heb ik als volgt gedaan:
 ![image](https://user-images.githubusercontent.com/121435298/212978832-4632f105-37ec-48ff-89ce-1f9afee13c77.png)![image](https://user-images.githubusercontent.com/121435298/212978878-72f49850-f142-4362-ad2f-cb47205cbdc2.png)
 
+ Vervolgens heb ik de X en y gedefinieerd.
+![image](https://user-images.githubusercontent.com/121435298/212979429-fa60dd1f-8435-4a55-b328-ee35f841d84c.png)
+
+De doelvariabele type is bij het omzeten naar een numieriek variabele niet omgezet naar een integer type. Dat moest gebeuren omdat de 'train_test_split' anders niet kan werken.
+![image](https://user-images.githubusercontent.com/121435298/212980269-01fa521b-0e4e-47f1-a68b-b58e550ea68f.png)
+
+Daarna heb ik de dataset gesplitst in een train, validatie en test sets. Dat heb ik gedaan zodat ik het model kan trainen met de trainset en kan valideren op de validatie set en uiteindelijk te testen om nieuwe data en dat is de testset.
 
 
 
