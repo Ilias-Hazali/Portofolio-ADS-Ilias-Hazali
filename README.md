@@ -122,7 +122,7 @@ De bedoeling is om de kolom 'kitchen' te voorspellen aan de hand van de ingrediÃ
 De dataset heb ik geimporteerd en geinspecteerd en vervolgens de kolomen van alle keukenstypes verwijdert. Ook heb ik de kolom "liked_recipes" verwijderd.
 ![image](https://user-images.githubusercontent.com/121435298/212973707-e49238fd-9322-4142-9a3a-bd563abc945d.png)
 
-Omdat de doelvariabele een categorische variabele is, heb ik besloten om het om te zetten naar een nummerieke variabele. (Dat resulteerde namelijk op beter voorspellingen op X_val)
+Omdat de doelvariabele een categorische variabele is, heb ik besloten om het om te zetten naar een nummerieke variabele. 
 ![image](https://user-images.githubusercontent.com/121435298/212978625-e94b3385-0c1f-4db6-891f-7b813e60e321.png)
 
 Dat heb ik als volgt gedaan:
@@ -135,7 +135,15 @@ De doelvariabele type is bij het omzeten naar een numieriek variabele niet omgez
 ![image](https://user-images.githubusercontent.com/121435298/212980269-01fa521b-0e4e-47f1-a68b-b58e550ea68f.png)
 
 Daarna heb ik de dataset gesplitst in een train, validatie en test sets. Dat heb ik gedaan zodat ik het model kan trainen met de trainset en kan valideren op de validatie set en uiteindelijk te testen om nieuwe data en dat is de testset.
+![image](https://user-images.githubusercontent.com/121435298/212985275-1a9ae6c8-1dc3-405f-89d7-6c9074cd3171.png)
 
+Nu dat da de dataset gesplistst is, heb ik de 'KNeighborsClassifer' gedefinieerd en de trainingset gebruikt om het trainen. Vervolgens het getraind model gebruikt om de doelvariabele van de validatieset te voorspellen.
+![image](https://user-images.githubusercontent.com/121435298/212986582-65c17150-3ffe-4a5c-9c67-bff92173f31f.png)
+
+Het model gaf een score van 0.9501779359430605.
+![image](https://user-images.githubusercontent.com/121435298/212989816-2ac4f76a-fe0f-490b-af96-3998f65830d2.png)
+
+Vervolgens heb ik de een ander classificatie model gebruikt genaamd 'OneVsRest
 
 
 
