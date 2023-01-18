@@ -116,7 +116,7 @@ Op het moment dat Milan de gebruikerssimulatie al klaar had staan, had ik het ge
 
 Het idee is dus om de favoriete keuken van een gebruiker te voorspellen zodat er een goede aanbeveling wordt gedaan binnen de voorspelde keuken. Daarvoor is een model benodigd die de juiste keuken van elke gebruiker kan vooorspellen. Na de dataset te hebben geinspeceteerd en de doelvariabele te hebben gedefinieerd, is er uitgerold dat we hier te maken hebben met een classicatie. Volgens [askpython](https://www.askpython.com/python/regression-vs-classification) , dient bij een categorische output een classificatie model gebruikt te worden om voorspellingen te kunnen doen.
 
-De bedoeling is om de kolom 'kitchen' te voorspellen aan de hand van de ingrediënten die de recepten bevatten die gebruiker als voorkeur heeft meegegeven. Na literatuuronderzoek te hebben gedaan, bleek dat er verschillende [classificatie modellen](https://monkeylearn.com/blog/what-is-a-classifier/) bestaan. Ik heb gekozen om de KNeighbors-classificatie model te testen op ons gesimuleeerde [dataset] (https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/final_userdata_min_40.csv). 
+De bedoeling is om de kolom 'kitchen' te voorspellen aan de hand van de ingrediënten die de recepten bevatten die gebruiker als voorkeur heeft meegegeven. Na literatuuronderzoek te hebben gedaan, bleek dat er verschillende [classificatie modellen](https://monkeylearn.com/blog/what-is-a-classifier/) bestaan. Ik heb gekozen om de KNeighbors-classificatie model te testen op ons gesimuleeerde [dataset](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/final_userdata_min_40.csv). 
 ![image](https://user-images.githubusercontent.com/121435298/212939500-b5e0a0f6-dacf-4069-9e38-b8a5f6821a55.png)
 
 De dataset heb ik geimporteerd en geinspecteerd en vervolgens de kolomen van alle keukenstypes verwijdert. Ook heb ik de kolom "liked_recipes" verwijderd.
@@ -143,10 +143,17 @@ Nu dat da de dataset gesplistst is, heb ik de 'KNeighborsClassifer' gedefinieerd
 Het model gaf een score van 0.9501779359430605.
 ![image](https://user-images.githubusercontent.com/121435298/212989816-2ac4f76a-fe0f-490b-af96-3998f65830d2.png)
 
-Vervolgens heb ik de een ander classificatie model gebruikt genaamd 'OneVsRest
+Vervolgens wou ik een ander model gaan testen en ik kwam achter dat elk model afzonderlijk te testen te veel tijd zou kosten. dus heb ik een functie aangemaakt die het werk kan versimpelen en meerdere classificatie modellen met elkaar kan vergelijken. Dat heb ik als volgt gedaan:
+Eerst heb alle classifiers die ik wilde testen geimporteerd. Daarna een leeg lijst aangemaakt waarin ik elk model een naam geef en aanroep.
+![image](https://user-images.githubusercontent.com/121435298/213184811-bb17e867-81c3-4df7-9d64-dbed9d6ab3af.png)
 
+Vervolgens heb ik een dataframe aangemaakt zodat ik een overzicht kan maken van de resultaten van elk model.
+![image](https://user-images.githubusercontent.com/121435298/213185189-232baa2d-7fe1-4e44-8a27-506e0c2c9035.png)
 
+Daarna een For-loop aangemaakt die elk model aanroept, fit op de trainset en de waarde van de 'X_val' voorspelt. Tevens wordt de 'Precsion_score', 'recall_score', 'accuracy_score'en de 'f1_score' van elk model bepaald en aan de dataframe toegeveogd.
+![image](https://user-images.githubusercontent.com/121435298/213188434-c528a395-5c46-4d7e-b817-24b9874995f5.png)
 
+Omdat we bij dit precies willen weten welk model het vaakst goed voorspeld, heb ikde 
 
 
 
