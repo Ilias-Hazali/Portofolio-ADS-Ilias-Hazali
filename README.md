@@ -125,7 +125,7 @@ De dataset heb ik geimporteerd en geinspecteerd en vervolgens de kolomen van all
 Omdat de doelvariabele een categorische variabele is, heb ik besloten om het om te zetten naar een nummerieke variabele. 
 ![image](https://user-images.githubusercontent.com/121435298/212978625-e94b3385-0c1f-4db6-891f-7b813e60e321.png)
 
-Dat heb ik als volgt gedaan:
+Dat heb ik als volgt gedaan: De Aziatische keuken kreeg het getal 0, Frans:1, Hollands:2, Italiaans:3, Mexicaans:4, Amerikaans:5, Mediteraans:6.
 ![image](https://user-images.githubusercontent.com/121435298/212978832-4632f105-37ec-48ff-89ce-1f9afee13c77.png)![image](https://user-images.githubusercontent.com/121435298/212978878-72f49850-f142-4362-ad2f-cb47205cbdc2.png)
 
  Vervolgens heb ik de X en y gedefinieerd.
@@ -140,10 +140,13 @@ Daarna heb ik de dataset gesplitst in een train, validatie en test sets. Dat heb
 Nu dat da de dataset gesplistst is, heb ik de 'KNeighborsClassifer' gedefinieerd en de trainingset gebruikt om het trainen. Vervolgens het getraind model gebruikt om de doelvariabele van de validatieset te voorspellen.
 ![image](https://user-images.githubusercontent.com/121435298/212986582-65c17150-3ffe-4a5c-9c67-bff92173f31f.png)
 
-Het model gaf een score van 0.9501779359430605.
-![image](https://user-images.githubusercontent.com/121435298/212989816-2ac4f76a-fe0f-490b-af96-3998f65830d2.png)
+Het model gaf een score van 0.9537366548042705
+![image](https://user-images.githubusercontent.com/121435298/213451408-0dc346be-59b7-4e2c-a35c-9335be41ef55.png)
 
-Vervolgens wou ik een ander model gaan testen en ik kwam achter dat elk model afzonderlijk te testen te veel tijd zou kosten. dus heb ik een functie aangemaakt die het werk kan versimpelen en meerdere classificatie modellen met elkaar kan vergelijken. Dat heb ik als volgt gedaan:
+Vervolgens heb ik een ander model getest genaamd 'OneVsRestClassifier'. Dat model heb ik gefit op dezelfde trainingsset en 'X_val' mee voorspeld en had een 0.9786476868327402 als score.
+![image](https://user-images.githubusercontent.com/121435298/213451585-a2881df0-6c40-40b8-a2bc-fbf0c0e6c896.png)
+
+Vervolgens wou ik een ander model gaan testen en ik kwam achter dat elk model afzonderlijk te testen te veel tijd zou kosten en zeer onoverzichtelijk wordt. dus heb ik een functie aangemaakt die het werk kan versimpelen en meerdere classificatie modellen met elkaar kan vergelijken. Dat heb ik als volgt gedaan:
 Eerst heb alle classifiers die ik wilde testen geimporteerd. Daarna een leeg lijst aangemaakt waarin ik elk model een naam geef en aanroep.
 ![image](https://user-images.githubusercontent.com/121435298/213184811-bb17e867-81c3-4df7-9d64-dbed9d6ab3af.png)
 
