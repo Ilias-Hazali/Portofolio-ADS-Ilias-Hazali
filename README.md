@@ -112,7 +112,7 @@ Later zijn we nog doorgegaan met een andere [dataset](https://github.com/Ilias-H
 Op het moment dat Milan de gebruikerssimulatie al klaar had staan, had ik het gevoel dat ik over te weinig `pandas` kennis beschik. Ik heb sindsdien meer Datacamp courses uitgevoerd zodat ik mijn programmeer vaardigheden kan verbeteren. Ik heb veel geoefend met dataframes en ik heb nieuwe `pandas` technieken wat mij heeft geholpen verder te werken aan de dataset. Zo heb ik geleerd hoe ik dataframes beter kan bewerken door ze eerst goed te inspecteren en te prepareren en in het vervolg zal ik dezelfde methode aanhouden op het moment dat ik over te weinig kennis beschik om een onderzoek te kunnen uitvoeren. 
 
 
-## Predictive Models
+## Predictive Models en Data Visualization
 
 Het idee is dus om de favoriete keuken van een gebruiker te voorspellen zodat er een goede aanbeveling wordt gedaan binnen de voorspelde keuken. Daarvoor is een model benodigd die de juiste keuken van elke gebruiker kan vooorspellen. Na de dataset te hebben geinspeceteerd en de doelvariabele te hebben gedefinieerd, is er uitgerold dat we hier te maken hebben met een classicatie. Volgens [askpython](https://www.askpython.com/python/regression-vs-classification) , dient bij een categorische output een classificatie model gebruikt te worden om voorspellingen te kunnen doen.
 
@@ -159,15 +159,16 @@ Daarna een For-loop aangemaakt die elk model aanroept, fit op de trainset en de 
 Omdat we bij dit onderzoek opzoek zijn naar het model die het beste kan voorspellen, heb ik de accuracy score van alle modellen met elkaar vergeleken. Want de accuracy score is de score dat aangeeft hoe vaak een model een voorspelling goed heeft.
 ![image](https://user-images.githubusercontent.com/121435298/213458732-2d3d4fd3-1932-4cd8-aede-cf3e0da70b97.png)
 
-Maar volgens [vitalflux](https://vitalflux.com/accuracy-precision-recall-f1-score-python-example/) is de accuracy geen goede maat om modellen met elkaar te vergelijken. In dat geval dienen de modellen aan de hand van hun 'roc auc score' met elkaar vergeleken te worden. Dus heb ik de roc auc score van alle modellen berekend en het model met de hoogste score gekozen. Dat laatste heb ik gedaan omdat de 'roc auc score' de relatie tussen de 'True positives' en de 'False positives' en hoe hoger de score hoe beter dat relatie is. De "DecisionTreeClassifier' had de 
+Maar volgens [vitalflux](https://vitalflux.com/accuracy-precision-recall-f1-score-python-example/) is de accuracy geen goede maat om modellen met elkaar te vergelijken. In dat geval dienen de modellen aan de hand van hun 'roc auc score' met elkaar vergeleken te worden. Dus heb ik de roc auc score van alle modellen berekend en het model met de hoogste score gekozen. Dat laatste heb ik gedaan omdat de 'roc auc score' de relatie tussen de 'True positives' en de 'False positives' en hoe hoger de score hoe beter dat relatie is. De "DecisionTreeClassifier' had de hoogste score  dus heb ik gekozen als model om ermee verder te werken.
+![image](https://user-images.githubusercontent.com/121435298/213468324-b1a43ff6-f43d-47be-b835-065ff374b81c.png)
+
+## Evaluation
 
 
-
-
-## Data Visualization
+ 
 
 
 
 ## Diagnostics of the learning process
 
-## Evaluation
+
