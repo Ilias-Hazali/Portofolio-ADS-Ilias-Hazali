@@ -156,7 +156,11 @@ Vervolgens heb ik een dataframe aangemaakt zodat ik een overzicht kan maken van 
 Daarna een For-loop aangemaakt die elk model aanroept, fit op de trainset en de waarde van de 'X_val' voorspelt. Tevens wordt de 'Precsion_score', 'recall_score', 'accuracy_score'en de 'f1_score' van elk model bepaald en aan de dataframe toegeveogd.
 ![image](https://user-images.githubusercontent.com/121435298/213188434-c528a395-5c46-4d7e-b817-24b9874995f5.png)
 
-Omdat we bij dit precies willen weten welk model het vaakst goed voorspeld, heb ikde 
+Omdat we bij dit onderzoek opzoek zijn naar het model die het beste kan voorspellen, heb ik de accuracy score van alle modellen met elkaar vergeleken. Want de accuracy score is de score dat aangeeft hoe vaak een model een voorspelling goed heeft.
+![image](https://user-images.githubusercontent.com/121435298/213458732-2d3d4fd3-1932-4cd8-aede-cf3e0da70b97.png)
+
+Maar volgens [vitalflux](https://vitalflux.com/accuracy-precision-recall-f1-score-python-example/) is de accuracy geen goede maat om modellen met elkaar te vergelijken. In dat geval dienen de modellen aan de hand van hun 'roc auc score' met elkaar vergeleken te worden. Dus heb ik de roc auc score van alle modellen berekend en het model met de hoogste score gekozen. Dat laatste heb ik gedaan omdat de 'roc auc score' de relatie tussen de 'True positives' en de 'False positives' en hoe hoger de score hoe beter dat relatie is. De "DecisionTreeClassifier' had de 
+
 
 
 
