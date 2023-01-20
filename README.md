@@ -116,10 +116,10 @@ Op het moment dat Milan de gebruikerssimulatie al klaar had staan, had ik het ge
 
 Het idee is dus om de favoriete keuken van een gebruiker te voorspellen zodat er een goede aanbeveling wordt gedaan binnen de voorspelde keuken. Daarvoor is een model benodigd die de juiste keuken van elke gebruiker kan vooorspellen. Na de dataset te hebben geinspeceteerd en de doelvariabele te hebben gedefinieerd, is er uitgerold dat we hier te maken hebben met een classicatie. Volgens [askpython](https://www.askpython.com/python/regression-vs-classification) , dient bij een categorische output een classificatie model gebruikt te worden om voorspellingen te kunnen doen.
 
-De bedoeling is om de kolom 'kitchen' te voorspellen aan de hand van de ingrediënten die de recepten bevatten die gebruiker als voorkeur heeft meegegeven. Na literatuuronderzoek te hebben gedaan, bleek dat er verschillende [classificatie modellen](https://monkeylearn.com/blog/what-is-a-classifier/) bestaan. Ik heb gekozen om de KNeighbors-classificatie model te testen op ons gesimuleeerde [dataset](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/final_userdata_min_40.csv). 
+De bedoeling is om de kolom `kitchen` te voorspellen aan de hand van de ingrediënten die de recepten bevatten die gebruiker als voorkeur heeft meegegeven. Na literatuuronderzoek te hebben gedaan, bleek dat er verschillende [classificatie modellen](https://monkeylearn.com/blog/what-is-a-classifier/) bestaan. Ik heb gekozen om de KNeighbors-classificatie model te testen op ons gesimuleeerde [dataset](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/final_userdata_min_40.csv). 
 ![image](https://user-images.githubusercontent.com/121435298/212939500-b5e0a0f6-dacf-4069-9e38-b8a5f6821a55.png)
 
-De dataset heb ik geimporteerd en geinspecteerd en vervolgens de kolomen van alle keukenstypes verwijdert. Ook heb ik de kolom "liked_recipes" verwijderd.
+De dataset heb ik geimporteerd en geinspecteerd en vervolgens de kolomen van alle keukenstypes verwijdert. Ook heb ik de kolom `liked_recipes` verwijderd.
 ![image](https://user-images.githubusercontent.com/121435298/212973707-e49238fd-9322-4142-9a3a-bd563abc945d.png)
 
 Omdat de doelvariabele een categorische variabele is, heb ik besloten om het om te zetten naar een nummerieke variabele. 
@@ -131,19 +131,19 @@ Dat heb ik als volgt gedaan: De Aziatische keuken kreeg het getal 0, Frans:1, Ho
  Vervolgens heb ik de X en y gedefinieerd.
 ![image](https://user-images.githubusercontent.com/121435298/212979429-fa60dd1f-8435-4a55-b328-ee35f841d84c.png)
 
-De doelvariabele type is bij het omzeten naar een numieriek variabele niet omgezet naar een integer type. Dat moest gebeuren omdat de 'train_test_split' anders niet kan werken.
+De doelvariabele type is bij het omzeten naar een numieriek variabele niet omgezet naar een integer type. Dat moest gebeuren omdat de `train_test_split` anders niet kan werken.
 ![image](https://user-images.githubusercontent.com/121435298/212980269-01fa521b-0e4e-47f1-a68b-b58e550ea68f.png)
 
 Daarna heb ik de dataset gesplitst in een train, validatie en test sets. Dat heb ik gedaan zodat ik het model kan trainen met de trainset en kan valideren op de validatie set en uiteindelijk te testen om nieuwe data en dat is de testset.
 ![image](https://user-images.githubusercontent.com/121435298/212985275-1a9ae6c8-1dc3-405f-89d7-6c9074cd3171.png)
 
-Nu dat da de dataset gesplistst is, heb ik de 'KNeighborsClassifer' gedefinieerd en de trainingset gebruikt om het trainen. Vervolgens het getraind model gebruikt om de doelvariabele van de validatieset te voorspellen.
+Nu dat da de dataset gesplistst is, heb ik de `KNeighborsClassifer` gedefinieerd en de trainingset gebruikt om het trainen. Vervolgens het getraind model gebruikt om de doelvariabele van de validatieset te voorspellen.
 ![image](https://user-images.githubusercontent.com/121435298/212986582-65c17150-3ffe-4a5c-9c67-bff92173f31f.png)
 
 Het model gaf een score van 0.9537366548042705
 ![image](https://user-images.githubusercontent.com/121435298/213451408-0dc346be-59b7-4e2c-a35c-9335be41ef55.png)
 
-Vervolgens heb ik een ander model getest genaamd 'OneVsRestClassifier'. Dat model heb ik gefit op dezelfde trainingsset en 'X_val' mee voorspeld en had een 0.9786476868327402 als score.
+Vervolgens heb ik een ander model getest genaamd `OneVsRestClassifier`. Dat model heb ik gefit op dezelfde trainingsset en `X_val` mee voorspeld en had een 0.9786476868327402 als score.
 ![image](https://user-images.githubusercontent.com/121435298/213451585-a2881df0-6c40-40b8-a2bc-fbf0c0e6c896.png)
 
 Vervolgens wou ik een ander model gaan testen en ik kwam achter dat elk model afzonderlijk te testen te veel tijd zou kosten en zeer onoverzichtelijk wordt. dus heb ik een functie aangemaakt die het werk kan versimpelen en meerdere classificatie modellen met elkaar kan vergelijken. Dat heb ik als volgt gedaan:
@@ -153,13 +153,13 @@ Eerst heb alle classifiers die ik wilde testen geimporteerd. Daarna een leeg lij
 Vervolgens heb ik een dataframe aangemaakt zodat ik een overzicht kan maken van de resultaten van elk model.
 ![image](https://user-images.githubusercontent.com/121435298/213185189-232baa2d-7fe1-4e44-8a27-506e0c2c9035.png)
 
-Daarna een For-loop aangemaakt die elk model aanroept, fit op de trainset en de waarde van de 'X_val' voorspelt. Tevens wordt de 'Precsion_score', 'recall_score', 'accuracy_score'en de 'f1_score' van elk model bepaald en aan de dataframe toegeveogd.
+Daarna een For-loop aangemaakt die elk model aanroept, fit op de trainset en de waarde van de `X_val` voorspelt. Tevens wordt de `Precsion_score` , `recall_score`, `accuracy_score` en de `f1_score` van elk model bepaald en aan de dataframe toegeveogd.
 ![image](https://user-images.githubusercontent.com/121435298/213188434-c528a395-5c46-4d7e-b817-24b9874995f5.png)
 
 Omdat we bij dit onderzoek opzoek zijn naar het model die het beste kan voorspellen, heb ik de accuracy score van alle modellen met elkaar vergeleken. Want de accuracy score is de score dat aangeeft hoe vaak een model een voorspelling goed heeft.
 ![image](https://user-images.githubusercontent.com/121435298/213458732-2d3d4fd3-1932-4cd8-aede-cf3e0da70b97.png)
 
-Maar volgens [vitalflux](https://vitalflux.com/accuracy-precision-recall-f1-score-python-example/) is de accuracy geen goede maat om modellen met elkaar te vergelijken. In dat geval dienen de modellen aan de hand van hun 'roc auc score' met elkaar vergeleken te worden. Dus heb ik de roc auc score van alle modellen berekend en het model met de hoogste score gekozen. Dat laatste heb ik gedaan omdat de 'roc auc score' de relatie tussen de 'True positives' en de 'False positives' en hoe hoger de score hoe beter dat relatie is. De "DecisionTreeClassifier' had de hoogste score  dus heb ik gekozen als model om ermee verder te werken.
+Maar volgens [vitalflux](https://vitalflux.com/accuracy-precision-recall-f1-score-python-example/) is de accuracy geen goede maat om modellen met elkaar te vergelijken. In dat geval dienen de modellen aan de hand van hun `roc auc score` met elkaar vergeleken te worden. Dus heb ik de roc auc score van alle modellen berekend en het model met de hoogste score gekozen. Dat laatste heb ik gedaan omdat de `roc auc score` de relatie tussen de `True positives` en de `False positives` weergeeft en hoe hoger de score hoe beter dat relatie is. De `DecisionTreeClassifier` had de hoogste score  dus heb ik gekozen als model om ermee verder te werken.
 ![image](https://user-images.githubusercontent.com/121435298/213468324-b1a43ff6-f43d-47be-b835-065ff374b81c.png)
 
 ## Evaluation
