@@ -187,7 +187,7 @@ Ik had het vermoeden dat het model overfit was omdat de `roc auc score` te laag 
 Ook had ik het vermoeden dat de methode die ik gebruikte om de `roc auc score` te berekenen niet goed was niet goed was, dus heb ik besloten om naar de score van elke keuken afzondelijk te bekijken. Daarbij ben ik gekomen op het volgend resultaat:
 ![image](https://user-images.githubusercontent.com/121435298/213886711-50ee2ea5-c164-4e6d-8f6c-0b711bd4c023.png)
 
-
+Daarbij heb ik geconcludeerd dat het model een aantal klassen goed voorspeld en andere minder goed. Zo is te zien dat het model het beste werkt op keukennummer 5 (`Amerikaans`). Daaropvolgend keukennummer 6 (`Mediteraans`), keukennummer 4 (`Mexicaans`). Bij de overige keukens is het model niet geschikt om voorspellingen mee te doen. Dus dat bracht mij tot de conclusie dat de gekozen model niet de beste voorspellingen kan genereren. Tevens heb ik gekeken naar de bij behorende `Confusion matrix`
 
  
 
