@@ -159,11 +159,27 @@ Daarna een For-loop aangemaakt die elk model aanroept, fit op de trainset en de 
 Omdat we bij dit onderzoek opzoek zijn naar het model die het beste kan voorspellen, heb ik de accuracy score van alle modellen met elkaar vergeleken. Want de accuracy score is de score dat aangeeft hoe vaak een model een voorspelling goed heeft.
 ![image](https://user-images.githubusercontent.com/121435298/213458732-2d3d4fd3-1932-4cd8-aede-cf3e0da70b97.png)
 
-Maar volgens [vitalflux](https://vitalflux.com/accuracy-precision-recall-f1-score-python-example/) is de accuracy geen goede maat om modellen met elkaar te vergelijken. In dat geval dienen de modellen aan de hand van hun `roc auc score` met elkaar vergeleken te worden. Dus heb ik de roc auc score van alle modellen berekend en het model met de hoogste score gekozen. Dat laatste heb ik gedaan omdat de `roc auc score` de relatie tussen de `True positives` en de `False positives` weergeeft en hoe hoger de score hoe beter dat relatie is. De `DecisionTreeClassifier` had de hoogste score  dus heb ik gekozen als model om ermee verder te werken.
+Maar volgens [vitalflux](https://vitalflux.com/accuracy-precision-recall-f1-score-python-example/) is de accuracy geen goede maat om modellen met elkaar te vergelijken. In dat geval dienen de modellen aan de hand van hun `roc auc score` met elkaar vergeleken te worden. Dus heb ik de roc auc score van alle modellen berekend en het model met de hoogste score gekozen. Dat laatste heb ik gedaan omdat de `roc auc score` de relatie tussen de `True positives` en de `False positives` weergeeft en hoe hoger de score hoe beter dat relatie is. De `DecisionTreeClassifier` had de hoogste score  dus heb ik het gekozen als model om ermee verder te werken.
 ![image](https://user-images.githubusercontent.com/121435298/213468324-b1a43ff6-f43d-47be-b835-065ff374b81c.png)
+
+Het model heb ik gefit op de train dataset en `X_val` mee voorspeld. Da dat gaf een score van 0.7864768683274022.
+![image](https://user-images.githubusercontent.com/121435298/213879383-839ee91c-9c04-4f84-8afb-ee0c807b5727.png)
 
 ## Evaluation
 
+Bij een Datacamp course, heb ik geleerd hoe ik de hyperparameters kan tunen om het model te evalueren. Dat kan door middel van verschillende algoritmes die verschillende combinaties van de parameters van een model kan testen en de beste resultaat kan weergeven. Een van de methodes die ik heb getest is de  `GridSearchCV`. Daarbij dient wel eerst een dictionary worden gemaakt van de hyperparameters die getuned kunnen worden.
+![image](https://user-images.githubusercontent.com/121435298/213880304-3240e2f1-8e3a-45d3-ab38-d31f060d4331.png)
+
+Vervolgens heb ik de grid search uitgevoerd en gefit op de Train dataset. 
+![image](https://user-images.githubusercontent.com/121435298/213880341-978a2e6b-4105-40b8-9ee3-946221c89c48.png)
+
+Na de uitvoering van de `GridSearchCV`, heb ik de beste parameters aan gevraagd en daarbij blijkt dat het model de beste resultaten met de volgende parameters:
+`ccp_alpha` van 0.001, `max_depth` van 19 en `max_features` op 'sqrt'. De beste score van het model was daarbij gelijk aan 0.7907002801120449.
+![image](https://user-images.githubusercontent.com/121435298/213880783-4ca4e23f-db72-44d2-b24a-81583d263031.png)
+![image](https://user-images.githubusercontent.com/121435298/213885358-0bf5d9e2-2ffd-4eac-88a3-4d8a122b0265.png)
+
+Het best model heb ik dan gefit op de train dataset en `X_test` mee voorspeld.
+![image](https://user-images.githubusercontent.com/121435298/213885445-093d7492-91c2-4d70-9a0f-611460c24e15.png)
 
  
 
