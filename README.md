@@ -181,6 +181,14 @@ Na de uitvoering van de `GridSearchCV`, heb ik de beste parameters aan gevraagd 
 Het best model heb ik dan gefit op de train dataset en `X_test` mee voorspeld.
 ![image](https://user-images.githubusercontent.com/121435298/213885445-093d7492-91c2-4d70-9a0f-611460c24e15.png)
 
+Ik had het vermoeden dat het model overfit was omdat de `roc auc score` te laag was. De score was gelijk aan 0.2550813008130081 en dat houdt dus in dat de relatie tussen `True positives`en de `False positives` slecht was. 
+![image](https://user-images.githubusercontent.com/121435298/213886696-d649d2bb-e77b-4e4d-b509-fa97585cceda.png)
+
+Ook had ik het vermoeden dat de methode die ik gebruikte om de `roc auc score` te berekenen niet goed was niet goed was, dus heb ik besloten om naar de score van elke keuken afzondelijk te bekijken. Daarbij ben ik gekomen op het volgend resultaat:
+![image](https://user-images.githubusercontent.com/121435298/213886711-50ee2ea5-c164-4e6d-8f6c-0b711bd4c023.png)
+
+
+
  
 
 
