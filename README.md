@@ -22,6 +22,12 @@ Nadat iedere groepslid literatuuronderzoek te hebben uitgevoerd, hebben we de on
 #### Reflectie
 In het begin ben ik niet op een geschikte onderzoeksdoel uitgekomen. Dat is het geval omdat ik te weinig aan literatuuronderzoek had gedaan en te haastig aan het project wou starten. Door alle verzamelde informatie op rijtje te hebben, heb ik een beter idee geregen over het onderzoek en zijn we als groep sneller op een onderzoeksdoel uitgekomen. in het vervolg zal ik geen overhaaste beslissingen nemen zonder voldoende literatuuronderzoek te hebben uitgevoerd en zal me meer verdiepen in het vinden van gerelateerde onderzoek i.p.v. direct starten met het vinden van een oplossing.
 
+
+###### resitricties van de data meenemen als de keukens de gesimuleerd dataset. data sets hier benoemen
+
+
+
+
 ## Data collection
 ### Foodboost
 Voor het foodboost project zijn een aantal datasets beschikbaar gesteld door de opdrachtgever:
