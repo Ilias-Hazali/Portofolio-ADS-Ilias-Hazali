@@ -162,8 +162,9 @@ Omdat we bij dit onderzoek opzoek zijn naar het model die het beste kan voorspel
 Maar volgens [vitalflux](https://vitalflux.com/accuracy-precision-recall-f1-score-python-example/) is de accuracy geen goede maat om modellen met elkaar te vergelijken. In dat geval dienen de modellen aan de hand van hun `roc auc score` met elkaar vergeleken te worden. Dus heb ik de roc auc score van alle modellen berekend en het model met de hoogste score gekozen. Dat laatste heb ik gedaan omdat de `roc auc score` de relatie tussen de `True positives` en de `False positives` weergeeft en hoe hoger de score hoe beter dat relatie is. De `DecisionTreeClassifier` had de hoogste score  dus heb ik het gekozen als model om ermee verder te werken.
 ![image](https://user-images.githubusercontent.com/121435298/213468324-b1a43ff6-f43d-47be-b835-065ff374b81c.png)
 
-Het model heb ik gefit op de train dataset en `X_val` mee voorspeld. Da dat gaf een score van 0.7864768683274022.
-![image](https://user-images.githubusercontent.com/121435298/213879383-839ee91c-9c04-4f84-8afb-ee0c807b5727.png)
+Het model heb ik gefit op de train dataset en `X_val` mee voorspeld. Da dat gaf een score van 0.7829181494661922.
+![image](https://user-images.githubusercontent.com/121435298/213924307-3476385a-30f7-4655-9dce-3c3b1cc52ce4.png)
+
 
 ## Evaluation
 
@@ -174,22 +175,42 @@ Vervolgens heb ik de grid search uitgevoerd en gefit op de Train dataset.
 ![image](https://user-images.githubusercontent.com/121435298/213880341-978a2e6b-4105-40b8-9ee3-946221c89c48.png)
 
 Na de uitvoering van de `GridSearchCV`, heb ik de beste parameters aan gevraagd en daarbij blijkt dat het model de beste resultaten met de volgende parameters:
-`ccp_alpha` van 0.001, `max_depth` van 19 en `max_features` op 'sqrt'. De beste score van het model was daarbij gelijk aan 0.7907002801120449.
-![image](https://user-images.githubusercontent.com/121435298/213880783-4ca4e23f-db72-44d2-b24a-81583d263031.png)
-![image](https://user-images.githubusercontent.com/121435298/213885358-0bf5d9e2-2ffd-4eac-88a3-4d8a122b0265.png)
+`ccp_alpha` van 0.001, `max_depth` van 18 en `max_features` op 'sqrt'. De beste score van het model op de train dataset was daarbij gelijk aan 0.776484593837535
+![image](https://user-images.githubusercontent.com/121435298/213924033-2a3732c7-a07f-489e-9b5f-6d1b0f42eb1c.png)
+![image](https://user-images.githubusercontent.com/121435298/213924064-c8563c90-d321-47f3-bd12-f27b8fba8cb6.png)
+
+De score van het model op het validatie set is gelijk aan 0.7224199288256228. Dat is lager dan dan de score van het model voordat de paramaters getuned zijn. Dat gaf al een reden om naar een ander model te kiezen. Toch ben ik doorgegaan om te kijken hoe het model zich reageert op het test set.
+![image](https://user-images.githubusercontent.com/121435298/213924349-89b183bb-7254-43bc-98ee-ed0e8b43626f.png)
+
 
 Het best model heb ik dan gefit op de train dataset en `X_test` mee voorspeld.
 ![image](https://user-images.githubusercontent.com/121435298/213885445-093d7492-91c2-4d70-9a0f-611460c24e15.png)
 
-Ik had het vermoeden dat het model overfit was omdat de `roc auc score` te laag was. De score was gelijk aan 0.2550813008130081 en dat houdt dus in dat de relatie tussen `True positives`en de `False positives` slecht was. 
-![image](https://user-images.githubusercontent.com/121435298/213886696-d649d2bb-e77b-4e4d-b509-fa97585cceda.png)
+Ik had het vermoeden dat het model overfit was omdat de `roc auc score` te laag was. De score was gelijk aan 0.23943089430894307 en dat houdt dus in dat de relatie tussen `True positives`en de `False positives` slecht was. 
+![image](https://user-images.githubusercontent.com/121435298/213924395-c26c0975-4b98-43c0-af92-d93c2b78f150.png)
 
 Ook had ik het vermoeden dat de methode die ik gebruikte om de `roc auc score` te berekenen niet goed was niet goed was, dus heb ik besloten om naar de score van elke keuken afzondelijk te bekijken. Daarbij ben ik gekomen op het volgend resultaat:
-![image](https://user-images.githubusercontent.com/121435298/213886711-50ee2ea5-c164-4e6d-8f6c-0b711bd4c023.png)
+![image](https://user-images.githubusercontent.com/121435298/213924410-2b2e6750-f955-47a1-89d0-ceb76b4bbd97.png)
 
-Daarbij heb ik geconcludeerd dat het model een aantal klassen goed voorspeld en andere minder goed. Zo is te zien dat het model het beste werkt op keukennummer 5 (`Amerikaans`). Daaropvolgend keukennummer 6 (`Mediteraans`), keukennummer 4 (`Mexicaans`). Bij de overige keukens is het model niet geschikt om voorspellingen mee te doen. Dus dat bracht mij tot de conclusie dat de gekozen model niet de beste voorspellingen kan genereren. Tevens heb ik gekeken naar de bij behorende `Confusion matrix`
+Daarbij heb ik geconcludeerd dat het model een aantal klassen goed voorspeld en andere minder goed. Zo is te zien dat het model het beste werkt op keukennummer 6 (`Mediteraans`) . Daaropvolgend keukennummer 5 (`Amerikaans`), keukennummer 4 (`Mexicaans`) en keukennummer 3 (`Italiaans`). Bij de overige keukens is het model niet geschikt om voorspellingen mee te doen. Dus dat bracht mij tot de conclusie dat de gekozen model niet de beste voorspellingen kan genereren. Tevens heb ik gekeken naar de bij behorende `Confusion matrix`. Daarbij was iets anders te concluderen, daar is te zien dat  model het goed doet bij het voorspellen van de keukennummers 1 en 4 en  bij de rest niet. 
+![image](https://user-images.githubusercontent.com/121435298/213924686-c2384119-ae43-4089-8c7c-84d93b06e261.png)
 
- 
+Het laatste conclusie kon ook getrokken worden na het bekijken van de `Calssification report`van het model. Daar is ook te zien dat de keukennummers 1 en 4 hoger scoren dan de rest van de keukennummers.
+![image](https://user-images.githubusercontent.com/121435298/213925379-5e7c992e-ac5e-46b1-a613-d87c32fb079d.png)
+
+Omdat het model, na een evaluatie poging, niet beter is geworden heb ik besloten om een andere methode te gebruiken voor de hyperparamters tuning. Daarvoor heb ik `RandomizedSearchCV` gebruikt. Na het uitvoeren, kreeg ik andere parameters dan de `GridSearchCV` en ik heb daarna dezelfde stappen genomen om te testen of het model het beter doet.
+![image](https://user-images.githubusercontent.com/121435298/213926026-fffd012d-5c8b-4136-805b-6514dc29d7b1.png)
+
+Het model gaf geen betere score op de validatie set en die was gelijk aan 0.7651245551601423
+![image](https://user-images.githubusercontent.com/121435298/213926042-2c5884f4-5936-4721-826d-53c7297ec931.png)
+
+Vervolgens heb ik het model gebruikt om daarmee de test dataset te voorspellen. En daarbij was ook te concluderen dat model niet alle keukens goed kan voorspellen. Zo is de `roc auc score` van de keukennummer zes, vijf, vier en drie hoger dan de rest.
+![image](https://user-images.githubusercontent.com/121435298/213930226-73cb0044-e56f-4196-81aa-b7575123dee6.png)
+
+En ook is te zien aan de `Confusion matrix` een andere conclusie weergeeft dan de `roc auc score`.
+![image](https://user-images.githubusercontent.com/121435298/213930387-10be0124-6948-42f5-ba97-37fc5e9ef369.png)
+
+
 
 
 
