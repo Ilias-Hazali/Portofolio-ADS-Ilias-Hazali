@@ -167,7 +167,7 @@ Het model heb ik gefit op de train dataset en `X_val` mee voorspeld. Da dat gaf 
 
 
 ## [Evaluation en Data Visualisation](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/Foodboost%20model%20kiezen%20pdf.pdf)
-### (Graag de pdf-file downloaden om het te kunnen bekijken. het bestand is te lang voor een volledige weergave op de website)
+#### (Graag de pdf-file downloaden om het te kunnen bekijken. het bestand is te lang voor een volledige weergave op de website)
 
 Om het model te evalueren dienen parameters gekozen te worden waarbij het model beter scoort op dezelfde dataset. Op [scikit-learn.org](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html) is te vinden dat `Max_depth` een van de parameters is die ervoor kan zorgen dat een model beter gedraagt. Ik had daarna een for-loop gemaakt die de `accuracy`, `recal`en `precision` score weergeeft die bij elk `Max_depth` hoort. Daarbij is te zien dat bij een depth van 19 het model de beste `Accuracy` score heeft. Maar de recall en precision zijn niet hoog genoeg. Ik had de besluit genomen om de andere parameters ook te tunen.
 ![image](https://user-images.githubusercontent.com/121435298/213935605-1eb30abe-90bc-4c6e-b28f-58570431cbbc.png)
