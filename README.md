@@ -207,10 +207,10 @@ Het model gaf geen betere score op de validatie set en die was gelijk aan 0.7651
 Vervolgens heb ik het model gebruikt om daarmee de test dataset te voorspellen. En daarbij was ook te concluderen dat model niet alle keukens goed kan voorspellen. Zo is de `roc auc score` van de keukennummer zes, vijf, vier en drie hoger dan de rest.
 ![image](https://user-images.githubusercontent.com/121435298/213930226-73cb0044-e56f-4196-81aa-b7575123dee6.png)
 
-En ook is te zien aan de `Confusion matrix` een andere conclusie weergeeft dan de `roc auc score`.
+Ook verschilt de conclusie dat bij de `Cocnfusion matrix` wordt getrokken dan bij de `roc auc score`. 
 ![image](https://user-images.githubusercontent.com/121435298/213930387-10be0124-6948-42f5-ba97-37fc5e9ef369.png)
 
-
+Aan de hand van alle resulaten kon ik concluderen dat het model niet geschikt was en op dat moment had de groep besloten om `KNeighborsClassifier`te gebruiken en zijn we daarmee doorgegaan.
 
 
 
