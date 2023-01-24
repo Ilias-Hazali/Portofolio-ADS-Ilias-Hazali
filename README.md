@@ -11,7 +11,11 @@ Dat heeft geleid tot de volgende onderzoekvraag: "Hoe kan de applicatie de best 
 
 ### Evaluation
 
-Tijdens dit project, heb ik veel nieuwe dingen geleerd. Zo ben ik achtergekomen wat Machine Learning is en waarvoor het gebruikt wordt. Tevens heb ik veel moeten werken met grote datasets. In een project waar ik aan heb gewerkt voor het begin van de minor, heb ik al met datasets moeten werken. Maar tijdens dit project heb ik nieuwe en makkelijke technieken geleerd hoe datasets aanngepast kunnen worden en gevisualiseerd kunnen worden. Ook heb ik geleerd het verschil te herkennen tussen de verschillende Machine Learning modellen
+Tijdens dit project, heb ik veel nieuwe dingen geleerd. Zo ben ik achtergekomen wat Machine Learning is en waarvoor het gebruikt wordt en hoe je verschillende modellen met elkaar kan vergelijken. Ik vond het leuk om te leren hoe voorspellingen worden gedaan aan de hand van algoritmes en datasets.
+
+Voor dit project heb ik dus ook de basiscode  geschreven voor de gebruikte Machine Learning modellen. Door de kennis die ik heb opgebouwd tijdens de Data Camp courses en de filmpjes die ik online heb gekeken, heb ik de basis code geschreven waardoor elk groepslid afzonderlijk een model kon testen op de dataset die we hadden. Op de basiscode voegde allerlei regelcodes toe om de resultaten van de modellen overzichtelijker te krijgen. Verder heb ik verschillende modellen getest en met elkaar vergeleken om de beste model te vinden voor ons onderzoeksprobleem.
+
+In het vervolg zou ik me meer willen verdiepen in andere c
 
 ## Domain Knowledge
 ### Foodboost project
