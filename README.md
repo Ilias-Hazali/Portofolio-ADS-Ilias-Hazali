@@ -226,7 +226,7 @@ Aan de hand van alle resultaten kon ik concluderen dat het model niet geschikt w
 
 
 ## Communication
-### Writing a paper
+### [Writing a paper](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/paper%20Groep%206%20Container%20project.pdf)
 
 Aan het einde van het onderzoek dient een paper geschreven te worden. Dat moet informatie geven over de probleemstelling, de oplossingsmethode en een conclusie. Eerst heb ik, samen met Brian, naar papers gekeken om een lay-out voor ons paper samen te stellen. Vervolgens hebben we gekeken naar de documenten die de school beschikbaar heeft gesteld om een paper te kunnen schrijven. Zodoende hebben we een lay-out gemaakt voor ons paper die bestaat uit de volgende koppen: Abstract, Introductie, Data, Technieken, Resultaten, Conclusie, Future work, Referenties en gerelateerde werk en als laatste de Begrippenlijst. Vervolgens heb ik onder elke kopje de verwachte resultaat in steek woorden neergezet, zodat het schrijven voor iedereen makkelijker wordt.
 ![image](https://user-images.githubusercontent.com/121435298/214298042-e2371b47-3ef7-4338-ab6d-7c46c6b55540.png)
