@@ -3,6 +3,16 @@
 
 Tijdens de minor heb ik een aantal Datacamp cursussen afgerond. [Hier](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/Datacamp%20assignement.jpg) en [hier](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/datacamp%20course%2015%20van%20de%2016.jpg) kunt een overzicht bekijken van de afgeronde cursussen en de bijbehorende scoren. 
 
+## Research Projects
+### Task definition
+
+De Food boost project is uitgevoerd naar aanleiding van de toenemende aandacht naar duurzamer eten. Duurzamer eten is echter niet makkelijk en dat is een van de grootste redenen waaron men snel kapt met het volgen van een voedingsschema. Men zou graag een voedingschema eillen volgen dat gezond en waarin veel variatie is. Dat laatste blijkt namelijk lastig te zijn, vaak hanteert men schema's die door een applicatie of een website is gemaakt waarin weinig variatie in zit waadoor men opzoek gaat naar andere oplossingen die buiten hun voedingschema valt en de reden geeft om te stoppen met het gebruiken van de applicatie/website. Tevens is het lastig om voor ieder indivu een aparte schema te maken want ieder persoon heeft een persoonlijke smaak en lichaam. De opdrachtgever wilt dus een applicatie hebben waarmee gebruikers een persoonlijk advies krijgen wat ze deze week gaan eten, zodat ze tot betere keuzes komen, maar ook gebruiksvriendelijk is.
+Dat heeft geleid tot de volgende onderzoekvraag: "Hoe kan de applicatie de best aanlsuitende hoofdgerechten aanraden op basis van de voorkeuren van de gebruiker?"
+
+### Evaluation
+
+
+
 ## Domain Knowledge
 ### Foodboost project
 #### Situatie
