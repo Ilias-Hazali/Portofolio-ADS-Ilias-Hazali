@@ -15,7 +15,11 @@ Tijdens dit project, heb ik veel nieuwe dingen geleerd. Zo ben ik achtergekomen 
 
 Voor dit project heb ik dus ook de basiscode  geschreven voor de gebruikte Machine Learning modellen. Door de kennis die ik heb opgebouwd tijdens de Data Camp courses en de filmpjes die ik online heb gekeken, heb ik de basis code geschreven waardoor elk groepslid afzonderlijk een model kon testen op de dataset die we hadden. Op de basiscode voegde allerlei regelcodes toe om de resultaten van de modellen overzichtelijker te krijgen. Verder heb ik verschillende modellen getest en met elkaar vergeleken om de beste model te vinden voor ons onderzoeksprobleem.
 
-In het vervolg zou ik me meer willen verdiepen in andere c
+In het vervolg zou ik me meer wilen verdiepen in classificatie modellen. Ik zou graag de werking van elk model beter willen begrijpen en ook uittesten voor ons onderzoek. Tevens zou ik in het vervolg alle wereldkeukens willen meenemen bij de voorspelling want er is maar een beperkt aantal keukens gebruikt. Daarbij zou ik ook willen werken met een reële dataset i.p.v. een zelf gesimuleerde dataset.
+
+### Conclusions
+
+
 
 ## Domain Knowledge
 ### Foodboost project
@@ -205,7 +209,7 @@ Na de uitvoering van de `GridSearchCV`, heb ik de beste parameters aan gevraagd 
 ![image](https://user-images.githubusercontent.com/121435298/213924033-2a3732c7-a07f-489e-9b5f-6d1b0f42eb1c.png)
 ![image](https://user-images.githubusercontent.com/121435298/213924064-c8563c90-d321-47f3-bd12-f27b8fba8cb6.png)
 
-De score van het model op het validatie set is gelijk aan 0.7224199288256228. Dat is lager dan dan de score van het model voordat de paramaters getuned zijn. Dat gaf al een reden om naar een ander model te kiezen. Toch ben ik doorgegaan om te kijken hoe het model zich reageert op het test set.
+De score van het model op het validatie set is gelijk aan 0.7224199288256228. Dat is lager dan dan de score van het model voordat de paramaters getuned zijn. Dat gaf al een reden om naar een ander model te kijken. Toch ben ik doorgegaan om te kijken hoe het model zich reageert op het test set.
 ![image](https://user-images.githubusercontent.com/121435298/213924349-89b183bb-7254-43bc-98ee-ed0e8b43626f.png)
 
 
@@ -218,7 +222,7 @@ Ik had het vermoeden dat het model overfit was omdat de `roc auc score` te laag 
 Ook had ik het vermoeden dat de methode die ik gebruikte om de `roc auc score` te berekenen niet goed was niet goed was, dus heb ik besloten om naar de score van elke keuken afzonderlijk te bekijken. Daarbij ben ik gekomen op het volgend resultaat:
 ![image](https://user-images.githubusercontent.com/121435298/213924410-2b2e6750-f955-47a1-89d0-ceb76b4bbd97.png)
 
-Daarbij heb ik geconcludeerd dat het model een aantal klassen goed voorspeld en andere minder goed. Zo is te zien dat het model het beste werkt op keukennummer 6 (`Mediteraans`) . Daaropvolgend keukennummer 5 (`Amerikaans`), keukennummer 4 (`Mexicaans`) en keukennummer 3 (`Italiaans`). Bij de overige keukens is het model niet geschikt om voorspellingen mee te doen. Dus dat bracht mij tot de conclusie dat de gekozen model niet de beste voorspellingen kan genereren. Tevens heb ik gekeken naar de bij behorende `Confusion matrix`. Daarbij was iets anders te concluderen, daar is te zien dat  model het goed doet bij het voorspellen van de keukennummers 1 en 4 en  bij de rest niet. 
+Daarbij heb ik geconcludeerd dat het model overfit was en dat het een aantal klassen goed voorspeld en andere minder goed. Zo is te zien dat het model het beste werkt op keukennummer 6 (`Mediteraans`) . Daaropvolgend keukennummer 5 (`Amerikaans`), keukennummer 4 (`Mexicaans`) en keukennummer 3 (`Italiaans`). Bij de overige keukens is het model niet geschikt om voorspellingen mee te doen. Dus dat bracht mij tot de conclusie dat de gekozen model niet de beste voorspellingen kan genereren. Tevens heb ik gekeken naar de bij behorende `Confusion matrix`. Daarbij was iets anders te concluderen, daar is te zien dat  model het goed doet bij het voorspellen van de keukennummers 1 en 4 en  bij de rest niet. 
 ![image](https://user-images.githubusercontent.com/121435298/213924686-c2384119-ae43-4089-8c7c-84d93b06e261.png)
 
 Het laatste conclusie kon ook getrokken worden na het bekijken van de `Calssification report` van het model. Daar is ook te zien dat de keukennummers 1 en 4 hoger scoren dan de rest van de keukennummers.
