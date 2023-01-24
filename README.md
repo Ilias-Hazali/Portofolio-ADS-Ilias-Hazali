@@ -236,3 +236,7 @@ Daarna heb ik, na de takenverdeling, het kopje Inleiding geschreven van de paper
 Na dat Milan klaar was met het schrijven van het kopje Resultaten (RL-model stukje), heb ik het kopje Discussie (RL-model stukje) geschreven. Daarbij heb ik resultaten eerst besturdeerd om daaruit discussie punten te formuleren. Eerst heb ik gekeken wat het model goed kan en daarna de minpunten van het model verzameld en alle verzamelde punten omschreven naar een stuk tekst die in de paper onder het kopje discussie staat.
 
 Tevens hebben we als groep om feedback gevraagd bij de begeleiders. Voor mijn geschreven stukken heb ik de feedback verwerkt in de paper en ik heb geholpen met het verwerken van de rest van de feedback.
+
+### Presentations
+
+Tijdens het project heb ik een aantal interne en externe presentaties gegeven. Zo heb ik mezelf aangegeven om te presenteren voor de presentatie beurt van de eerste week. Daarbij de eerste drie slides van de [power point] gepresenteerd.
