@@ -11,7 +11,7 @@ Dat heeft geleid tot de volgende onderzoekvraag: "Hoe kan de applicatie de best 
 
 ### Evaluation
 
-
+Tijdens dit project, heb ik veel nieuwe dingen geleerd. Zo ben ik achtergekomen wat Machine Learning is en waarvoor het gebruikt wordt. Tevens heb ik veel moeten werken met grote datasets. In een project waar ik aan heb gewerkt voor het begin van de minor, heb ik al met datasets moeten werken. Maar tijdens dit project heb ik nieuwe en makkelijke technieken geleerd hoe datasets aanngepast kunnen worden en gevisualiseerd kunnen worden. Ook heb ik geleerd het verschil te herkennen tussen de verschillende Machine Learning modellen
 
 ## Domain Knowledge
 ### Foodboost project
