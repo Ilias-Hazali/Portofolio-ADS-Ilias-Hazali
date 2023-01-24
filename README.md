@@ -239,4 +239,5 @@ Tevens hebben we als groep om feedback gevraagd bij de begeleiders. Voor mijn ge
 
 ### Presentations
 
-Tijdens het project heb ik een aantal interne en externe presentaties gegeven. Zo heb ik mezelf aangegeven om te presenteren voor de presentatie beurt van de eerste week. Daarbij de eerste drie slides van de [power point] gepresenteerd.
+Tijdens het project heb ik een aantal interne en externe presentaties gegeven. Zo heb ik mezelf aangegeven om te presenteren voor de presentatie beurt van de eerste week. Daarbij de eerste drie slides van de [power point](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/Week%201%20-%20Presentatie.pptx) gepresenteerd.
+Vervolgens kwam ik weer aan de beurt in week 6 met de externe presentatie. Daarbij heb ik de slide nummers [seven, acht en negen] gepresenteerd.
