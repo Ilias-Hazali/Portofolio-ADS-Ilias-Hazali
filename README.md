@@ -241,4 +241,5 @@ Tevens hebben we als groep om feedback gevraagd bij de begeleiders. Voor mijn ge
 
 Tijdens het project heb ik een aantal interne en externe presentaties gegeven. Zo heb ik mezelf aangegeven om te presenteren voor de presentatie beurt van de eerste week. Daarbij de eerste drie slides van de [power point](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/Week%201%20-%20Presentatie.pptx) gepresenteerd.
 Vervolgens kwam ik weer aan de beurt in week 6 met de externe presentatie. Daarbij heb ik de slide nummers [seven, acht en negen](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/eindpresentatie%20foodboost%20versie%202.pptx) gepresenteerd.
-In week 18 heb ik [slides]  
+In week 18 heb ik [slides](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/Presentatie.pptx) gepresenteerd.
+Volgens de taakverdeling ben ik aan de beurt voor de laatste externe presentatie die in Den Haag wordt gegeven. Daarbij zal ik ook een deel van de presentatie geven maar helaas is de Power point op dit moment nog niet gemaakt dus kan ik niet benoemen welke slides ik zal behandelen.
