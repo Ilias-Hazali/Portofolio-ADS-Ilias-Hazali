@@ -190,8 +190,9 @@ Maar volgens [vitalflux](https://vitalflux.com/accuracy-precision-recall-f1-scor
 Het model heb ik gefit op de train dataset en `X_val` mee voorspeld. Dat gaf een score van 0.7651245551601423 op de validatie set. En een score van 0.7752675386444708 op de trainingset.
 ![image](https://user-images.githubusercontent.com/121435298/214589104-6f7111da-d2a7-4abe-9787-018f4dd799df.png)
 
-Omdat de score van het model op de trainingset hoger is dan op de validatie, wou ik checken of er overfiiting ondervind. Het model had een accurary van 0.7651245551601423 en een bijzondere lage `roc_auc score` van 0.4902439024390244 en dat gaf een mogelijke indicatie voor overfitiing.
-![image](https://user-images.githubusercontent.com/121435298/214590730-28742a1e-c5bd-455c-ba87-8462a06d5007.png)
+Omdat de score van het model op de trainingset hoger is dan op de validatie, wou ik checken of er overfiiting ondervind. Het model had een accurary van 0.7651245551601423 en een bijzondere lage `roc_auc score` van 0.21379668049792533 en dat gaf een mogelijke indicatie voor overfitiing.
+![image](https://user-images.githubusercontent.com/121435298/214597423-d45d0f4c-567d-4ce6-8d8b-96f883937242.png)
+
 
 
 
@@ -200,14 +201,14 @@ Omdat de score van het model op de trainingset hoger is dan op de validatie, wou
 ## [Evaluation en Data Visualisation](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/Foodboost%20model%20kiezen%20pdf.pdf)
 ##### (Graag de pdf-file downloaden om het te kunnen bekijken. het bestand is te lang voor een volledige weergave op de website)
 
-Om het model te evalueren en om overfitting te vermijden dienen parameters gekozen te worden waarbij het model beter scoort op dezelfde dataset. Op [scikit-learn.org](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html) is te vinden dat `Max_depth` een van de parameters is die ervoor kan zorgen dat een model beter gedraagt. Ik had daarna een for-loop gemaakt die de `accuracy`, `recal`en `precision` score weergeeft die bij elk `Max_depth` hoort. Daarbij is te zien dat bij een depth van 19 het model de beste `Accuracy` score heeft. Maar de recall en precision zijn niet hoog genoeg. Ik had de besluit genomen om de andere parameters ook te tunen.
-![image](https://user-images.githubusercontent.com/121435298/213935605-1eb30abe-90bc-4c6e-b28f-58570431cbbc.png)
+Om het model te evalueren en om overfitting te vermijden dienen parameters gekozen te worden waarbij het model beter scoort op dezelfde dataset. Op [scikit-learn.org](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html) is te vinden dat `Max_depth` een van de parameters is die ervoor kan zorgen dat een model beter gedraagt. Ik had daarna een for-loop gemaakt die de `accuracy`, `recal`en `precision` score weergeeft die bij elk `Max_depth` hoort. Daarbij is te zien dat bij een depth van 16 het model de beste `Accuracy` score heeft. Maar om alleen de `Max-depth`te tunen is niet goenoeg daarom had ik de besluit genomen om de andere parameters ook te tunen.
+![image](https://user-images.githubusercontent.com/121435298/214591957-69ecb0c4-589c-4a40-b235-de2652ca9b73.png)
 
 
 Bij een Datacamp course, heb ik geleerd hoe ik de hyperparameters kan tunen om het model te evalueren. Dat kan door middel van verschillende algoritmes die verschillende combinaties van de parameters van een model kan testen en de beste resultaat kan weergeven. Een van de methodes die ik heb getest is de  `GridSearchCV`. Daarbij dient wel eerst een dictionary worden gemaakt van de hyperparameters die getuned kunnen worden.
 ![image](https://user-images.githubusercontent.com/121435298/213880304-3240e2f1-8e3a-45d3-ab38-d31f060d4331.png)
 
-Vervolgens heb ik de grid search uitgevoerd en gefit op de Train dataset. 
+Vervolgens heb ik de gridsearch uitgevoerd en gefit op de Train dataset. 
 ![image](https://user-images.githubusercontent.com/121435298/213880341-978a2e6b-4105-40b8-9ee3-946221c89c48.png)
 
 Na de uitvoering van de `GridSearchCV`, heb ik de beste parameters aan gevraagd en daarbij blijkt dat het model de beste resultaten met de volgende parameters:
@@ -215,7 +216,7 @@ Na de uitvoering van de `GridSearchCV`, heb ik de beste parameters aan gevraagd 
 ![image](https://user-images.githubusercontent.com/121435298/213924033-2a3732c7-a07f-489e-9b5f-6d1b0f42eb1c.png)
 ![image](https://user-images.githubusercontent.com/121435298/213924064-c8563c90-d321-47f3-bd12-f27b8fba8cb6.png)
 
-De score van het model op het validatie set is gelijk aan 0.7224199288256228. Dat is lager dan dan de score van het model voordat de paramaters getuned zijn. Dat gaf al een reden om naar een ander model te kijken. Toch ben ik doorgegaan om te kijken hoe het model zich reageert op het test set.
+De score van het model op de validatie set is gelijk aan 0.7224199288256228. Dat is lager dan dan de score van het model op de trainingset.
 ![image](https://user-images.githubusercontent.com/121435298/213924349-89b183bb-7254-43bc-98ee-ed0e8b43626f.png)
 
 
