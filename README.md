@@ -208,8 +208,6 @@ Om het model te evalueren en om overfitting te vermijden zijn een aantal technie
 Ik ben begonnen met de hyperparameters tuning om de beste parameters van het model te vinden. Op [scikit-learn.org](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html) is te vinden dat `Max_depth` een van de parameters is die ervoor kan zorgen dat een model beter gedraagt. Ik had daarna een for-loop gemaakt die de `accuracy`, `recal`en `precision` score weergeeft die bij elk `Max_depth` hoort. Daarbij is te zien dat bij een depth van 14 en 19 het model de beste `Accuracy` score heeft. Maar om alleen de `Max-depth`te tunen is niet goenoeg daarom had ik de besluit genomen om de andere parameters ook te tunen.
 ![image](https://user-images.githubusercontent.com/121435298/214603778-323860bc-6fff-470a-8faf-5748f5e14e6c.png)
 
-
-
 Bij een Datacamp course, heb ik geleerd hoe ik de hyperparameters kan tunen om het model te evalueren. Dat kan door middel van verschillende algoritmes die verschillende combinaties van de parameters van een model kan testen en de beste resultaat kan weergeven. Een van de methodes die ik heb getest is de  `GridSearchCV`. Daarbij dient wel eerst een dictionary worden gemaakt van de hyperparameters die getuned kunnen worden.
 ![image](https://user-images.githubusercontent.com/121435298/213880304-3240e2f1-8e3a-45d3-ab38-d31f060d4331.png)
 
@@ -236,46 +234,28 @@ Het model gaf werderom weer een slechte verhouding van de roc en de accuracy sco
 Omdat de `Roc auc score` elke keer zou laag was wou ik nagaan waarom dat het geval en welke klassen zorgen voor een lage score. Ik heb een plot gemaakt waarin de roc score van elke klasse tegenover de rest weergeft. Daarin is te zien dat keukennummers vier , vijf en zes hoger scoren dat de rest van de keukennummers. En dat is de reden van de lage roc score.
 ![image](https://user-images.githubusercontent.com/121435298/214614608-8c012417-67cd-41a9-b4bb-aa9d1181423c.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Omdat het model, na een evaluatie poging, niet beter is geworden heb ik besloten om een andere methode te gebruiken voor de hyperparameters tuning. Daarvoor heb ik `RandomizedSearchCV` gebruikt. Na het uitvoeren, kreeg ik andere parameters dan de `GridSearchCV` en ik heb daarna dezelfde stappen genomen om te testen of het model het beter doet.
 ![image](https://user-images.githubusercontent.com/121435298/214615522-b2c1112b-7e68-4339-9e55-89dd46fe4626.png)
 ![image](https://user-images.githubusercontent.com/121435298/214615568-9fe3ba45-511e-4750-ae05-196bdd1e3fd1.png)
 
 
-Het model had een score van 0.9988109393579072 op de trainings set en een score van 0.8042704626334519. De score op de trainingsset is hoger dan op de validatie set en dat gaf een reden om te kijken of het model overfit was.
+Het model had een score van 0.9988109393579072 op de trainings set en een score van 0.8042704626334519 op de trainingsset. De score op de trainingsset is hoger dan op de validatie set en dat gaf een reden om te kijken of het model overfit was.
 ![image](https://user-images.githubusercontent.com/121435298/214616311-82433b3c-d20b-42bc-8316-fe2cba6384fe.png)
 
-Met het model heb ik `X_val` voorspeld en de bijbehorende accuracy score en roc berekend. De roc score is in dit geval wel hoger dan het eeerste model en het model van de gridsearch. Bij de roc auc score geldt wel dat hoe hoger de score hoe beter. Het model heeft wel een hoger roc score mar 0.49 is niet hoog genoeg om te kunnen zeggen dat de relatie tussen `True positives` en `Falase positives` goed is.
+Met het model heb ik `X_val` voorspeld en de bijbehorende accuracy score en roc berekend. De roc score is in dit geval wel hoger dan het eeerste model en het model van de gridsearch. Bij de roc auc score geldt wel dat hoe hoger de score hoe beter. Het model heeft wel een hoger roc score mar 0.49 is niet hoog genoeg om te kunnen zeggen dat de relatie tussen `True positives` en `False positives` goed is.
 ![image](https://user-images.githubusercontent.com/121435298/214617208-d1285f20-8d9f-4bd6-af3a-9474fdc8d07b.png)
 
 Voor dit model heb ik ook de roc auc score van elke klasse apart geplot en daar is te zien dat de score van alle klasse redelijk gelijk is aan elkaar. 
 ![image](https://user-images.githubusercontent.com/121435298/214618659-11f53396-0fbf-41d4-8ad6-256aa588a800.png)
 
+Omdat er nu een verbetering is bij de accuracy score en de roc auc score, heb ik toch besloten om het model te gebruiken om de test set te voorspellen en de resultaten daarvan te bekijken. De roc is zeer laag maar de accuracy is wel ongeveer 80%. 
+![image](https://user-images.githubusercontent.com/121435298/214638901-f6a79f05-e15f-45d1-b7d6-39d7e04df8ec.png)
+
+De confusion matrix geeft aan dat het model de keukennummers zes en drie niet goed voorspeld en de rest beter.
+![image](https://user-images.githubusercontent.com/121435298/214639469-9c769075-2504-4796-ad28-97bcb83af0a9.png)
 
 
-
-Vervolgens heb ik het model gebruikt om daarmee de test dataset te voorspellen. En daarbij was ook te concluderen dat model niet alle keukens goed kan voorspellen. Zo is de `roc auc score` van de keukennummer zes, vijf, vier en drie hoger dan de rest.
-![image](https://user-images.githubusercontent.com/121435298/213930226-73cb0044-e56f-4196-81aa-b7575123dee6.png)
-
-Ook verschilt de conclusie dat bij de `Cocnfusion matrix` wordt getrokken dan bij de `roc auc score`. 
-![image](https://user-images.githubusercontent.com/121435298/213930387-10be0124-6948-42f5-ba97-37fc5e9ef369.png)
-
-Aan de hand van alle resultaten kon ik concluderen dat het model was en op dat moment had de groep besloten om `KNeighborsClassifier` te gebruiken en zijn we daarmee doorgegaan.
-
+Aan de hand van alle resultaten kon ik twee dingen concluderen. Het model is is het beste model om de wereld keukenss te voorspellen of ik maak ergens een fout bij het berekenen van de `roc auc score`dat het telkens zo laag. Ik wou het laatste nog verder uitzoeken maar op dat moment had de groep besloten om `KNeighborsClassifier` te gebruiken en zijn we daarmee doorgegaan.
 
 
 ## Communication
