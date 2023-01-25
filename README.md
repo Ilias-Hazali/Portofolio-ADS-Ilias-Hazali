@@ -187,12 +187,14 @@ Omdat we bij dit onderzoek opzoek zijn naar het model die het beste kan voorspel
 Maar volgens [vitalflux](https://vitalflux.com/accuracy-precision-recall-f1-score-python-example/) is de accuracy geen goede maat om modellen met elkaar te vergelijken. In dat geval dienen de modellen aan de hand van hun `roc auc score` met elkaar vergeleken te worden. Dus heb ik de roc auc score van alle modellen berekend en het model met de hoogste score gekozen. Dat laatste heb ik gedaan omdat de `roc auc score` de relatie tussen de `True positives` en de `False positives` weergeeft en hoe hoger de score hoe beter dat relatie is. De `DecisionTreeClassifier` had de hoogste score  dus heb ik het gekozen als model om ermee verder te werken.
 ![image](https://user-images.githubusercontent.com/121435298/213468324-b1a43ff6-f43d-47be-b835-065ff374b81c.png)
 
-Het model heb ik gefit op de train dataset en `X_val` mee voorspeld. Dat gaf een score van 0.7651245551601423 op de validatie set. En een score van 0.7752675386444708 op de trainingset.
-![image](https://user-images.githubusercontent.com/121435298/214589104-6f7111da-d2a7-4abe-9787-018f4dd799df.png)
+Het model heb ik gefit op de train dataset en `X_val` mee voorspeld. Dat gaf een score van 0.7788347205707491 op trainingsset.
+![image](https://user-images.githubusercontent.com/121435298/214601728-4a125471-ab93-4333-afce-6bfac671dd06.png)
 
-Omdat de score van het model op de trainingset hoger is dan op de validatie, wou ik checken of er overfiiting ondervind. Het model had een accurary van 0.7651245551601423 en een bijzondere lage `roc_auc score` van 0.21379668049792533 en dat gaf een mogelijke indicatie voor overfitiing.
-![image](https://user-images.githubusercontent.com/121435298/214597423-d45d0f4c-567d-4ce6-8d8b-96f883937242.png)
+Voor het model heb ik dan de accuracy score berekend en dat was een acceptabele score van 0.7900355871886121. Vervolgens heb ik de `roc auc score` van het model berekend en die was gelijk aan 0.1943464730290456. Dat is te laag en dat gaf een indicatie voor een mogelijke overfitting. 
+![image](https://user-images.githubusercontent.com/121435298/214602594-9b96fefc-68b0-419e-bad9-73a8139f295d.png)
 
+Echter zag de `Confusion matrix` niet slecht uit. Daarmee kon gelijk gezien waar de redelijke hoge accuracy score vandaan kwam. 
+![image](https://user-images.githubusercontent.com/121435298/214603259-35105e8c-d19a-40f8-a7fc-1dc517a2fd86.png)
 
 
 
@@ -201,8 +203,11 @@ Omdat de score van het model op de trainingset hoger is dan op de validatie, wou
 ## [Evaluation en Data Visualisation](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/Foodboost%20model%20kiezen%20pdf.pdf)
 ##### (Graag de pdf-file downloaden om het te kunnen bekijken. het bestand is te lang voor een volledige weergave op de website)
 
-Om het model te evalueren en om overfitting te vermijden dienen parameters gekozen te worden waarbij het model beter scoort op dezelfde dataset. Op [scikit-learn.org](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html) is te vinden dat `Max_depth` een van de parameters is die ervoor kan zorgen dat een model beter gedraagt. Ik had daarna een for-loop gemaakt die de `accuracy`, `recal`en `precision` score weergeeft die bij elk `Max_depth` hoort. Daarbij is te zien dat bij een depth van 16 het model de beste `Accuracy` score heeft. Maar om alleen de `Max-depth`te tunen is niet goenoeg daarom had ik de besluit genomen om de andere parameters ook te tunen.
-![image](https://user-images.githubusercontent.com/121435298/214591957-69ecb0c4-589c-4a40-b235-de2652ca9b73.png)
+Om het model te evalueren en om overfitting te vermijden zijn een aantal technieken die toegepast kunnen worden. Volgens [machinelearningmastery](https://machinelearningmastery.com/introduction-to-regularization-to-reduce-overfitting-and-improve-generalization-error/) is een van de methodes om de complexiteit van het model te verminden. Tevens is volgens [gitconnected](https://levelup.gitconnected.com/6-solutions-prevent-model-overfitting-9c73aa026c1) regularisatie een methode die daarbij kan helpen. En als is hyperparameters tuning een van de manieren om een model te optimaliseren, volgens [oreilly](https://www.oreilly.com/library/view/evaluating-machine-learning/9781492048756/ch04.html).
+
+Ik ben begonnen met de hyperparameters tuning om de beste parameters van het model te vinden. Op [scikit-learn.org](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html) is te vinden dat `Max_depth` een van de parameters is die ervoor kan zorgen dat een model beter gedraagt. Ik had daarna een for-loop gemaakt die de `accuracy`, `recal`en `precision` score weergeeft die bij elk `Max_depth` hoort. Daarbij is te zien dat bij een depth van 14 en 19 het model de beste `Accuracy` score heeft. Maar om alleen de `Max-depth`te tunen is niet goenoeg daarom had ik de besluit genomen om de andere parameters ook te tunen.
+![image](https://user-images.githubusercontent.com/121435298/214603778-323860bc-6fff-470a-8faf-5748f5e14e6c.png)
+
 
 
 Bij een Datacamp course, heb ik geleerd hoe ik de hyperparameters kan tunen om het model te evalueren. Dat kan door middel van verschillende algoritmes die verschillende combinaties van de parameters van een model kan testen en de beste resultaat kan weergeven. Een van de methodes die ik heb getest is de  `GridSearchCV`. Daarbij dient wel eerst een dictionary worden gemaakt van de hyperparameters die getuned kunnen worden.
@@ -212,12 +217,29 @@ Vervolgens heb ik de gridsearch uitgevoerd en gefit op de Train dataset.
 ![image](https://user-images.githubusercontent.com/121435298/213880341-978a2e6b-4105-40b8-9ee3-946221c89c48.png)
 
 Na de uitvoering van de `GridSearchCV`, heb ik de beste parameters aan gevraagd en daarbij blijkt dat het model de beste resultaten met de volgende parameters:
-`ccp_alpha` van 0.001, `max_depth` van 18 en `max_features` op 'sqrt'. De beste score van het model op de train dataset was daarbij gelijk aan 0.776484593837535
-![image](https://user-images.githubusercontent.com/121435298/213924033-2a3732c7-a07f-489e-9b5f-6d1b0f42eb1c.png)
-![image](https://user-images.githubusercontent.com/121435298/213924064-c8563c90-d321-47f3-bd12-f27b8fba8cb6.png)
+`ccp_alpha` van 0.001, `max_depth` van 16 en `max_features` op 'sqrt'. De beste score van het model op de train dataset was daarbij gelijk aan 0.7835574229691877.
+![image](https://user-images.githubusercontent.com/121435298/214604163-8b86c872-d5f6-4f50-b220-801832e58066.png)
+![image](https://user-images.githubusercontent.com/121435298/214604255-55f3fd7f-0841-471f-baa3-f44dacfaa4ea.png)
 
-De score van het model op de validatie set is gelijk aan 0.7224199288256228. Dat is lager dan dan de score van het model op de trainingset.
-![image](https://user-images.githubusercontent.com/121435298/213924349-89b183bb-7254-43bc-98ee-ed0e8b43626f.png)
+Met de beste estimator van het model heb ik `X_val` voorspeld en de accuracy score en roc score berekend. De roc score is erg laag, en dat houdt in dat de relatie tussen de `True positives`en de `False positives` selcht. En dat leide tot de conclusie dat het model nog overfit is.
+![image](https://user-images.githubusercontent.com/121435298/214609708-355771fa-f4ad-4131-b01f-9bd9980346c8.png)
+
+Vervolgens heb ik geprobeerd om de data te schalen om daarmee betere resultaten te krijgen. Daarna heb ik de beste estimator van de grid op de geschaalde data gefit en `X_val`mee voorspeld`.
+![image](https://user-images.githubusercontent.com/121435298/214612285-bd1d4c51-8a26-45e9-b534-29d731be2a34.png)
+
+Het model gaf werderom weer een slechte verhouding van de roc en de accuracy scores.
+![image](https://user-images.githubusercontent.com/121435298/214612728-5dcb6316-b21b-428f-a131-93eb4162b9aa.png)
+
+
+
+
+
+
+
+
+
+
+
 
 
 Het best model heb ik dan gefit op de train dataset en `X_test` mee voorspeld.
