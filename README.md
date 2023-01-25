@@ -15,9 +15,14 @@ Tijdens dit project, heb ik veel nieuwe dingen geleerd. Zo ben ik achtergekomen 
 
 Voor dit project heb ik dus ook de basiscode  geschreven voor de gebruikte Machine Learning modellen. Door de kennis die ik heb opgebouwd tijdens de Data Camp courses en de filmpjes die ik online heb gekeken, heb ik de basis code geschreven waardoor elk groepslid afzonderlijk een model kon testen op de dataset die we hadden. Op de basiscode voegde allerlei regelcodes toe om de resultaten van de modellen overzichtelijker te krijgen. Verder heb ik verschillende modellen getest en met elkaar vergeleken om de beste model te vinden voor ons onderzoeksprobleem.
 
-In het vervolg zou ik me meer wilen verdiepen in classificatie modellen. Ik zou graag de werking van elk model beter willen begrijpen en ook uittesten voor ons onderzoek. Tevens zou ik in het vervolg alle wereldkeukens willen meenemen bij de voorspelling want er is maar een beperkt aantal keukens gebruikt. Daarbij zou ik ook willen werken met een reële dataset i.p.v. een zelf gesimuleerde dataset.
+In het vervolg zou ik me meer willen verdiepen in classificatie modellen. Ik zou graag de werking van elk model beter willen begrijpen en ook uittesten voor ons onderzoek. Tevens zou ik in het vervolg alle wereldkeukens willen meenemen bij de voorspelling want er is maar een beperkt aantal keukens gebruikt. Daarbij zou ik ook willen werken met een reële dataset i.p.v. een zelf gesimuleerde dataset.
 
 ### Conclusions
+![image](https://user-images.githubusercontent.com/121435298/214647223-b07af5ae-c27e-49ac-aedd-e190559ba243.png)
+
+
+
+
 
 
 
