@@ -6,29 +6,41 @@ Tijdens de minor heb ik een aantal Datacamp cursussen afgerond. [Hier](https://g
 ## Research Projects
 ### Task definition
 
-De Food boost project is uitgevoerd naar aanleiding van de toenemende aandacht naar duurzamer eten. Duurzamer eten is echter niet makkelijk en dat is een van de grootste redenen waaron men snel kapt met het volgen van een voedingsschema. Men zou graag een voedingschema eillen volgen dat gezond en waarin veel variatie is. Dat laatste blijkt namelijk lastig te zijn, vaak hanteert men schema's die door een applicatie of een website is gemaakt waarin weinig variatie in zit waadoor men opzoek gaat naar andere oplossingen die buiten hun voedingschema valt en de reden geeft om te stoppen met het gebruiken van de applicatie/website. Tevens is het lastig om voor ieder indivu een aparte schema te maken want ieder persoon heeft een persoonlijke smaak en lichaam. De opdrachtgever wilt dus een applicatie hebben waarmee gebruikers een persoonlijk advies krijgen wat ze deze week gaan eten, zodat ze tot betere keuzes komen, maar ook gebruiksvriendelijk is.
-Dat heeft geleid tot de volgende onderzoekvraag: "Hoe kan de applicatie de best aanlsuitende hoofdgerechten aanraden op basis van de voorkeuren van de gebruiker?"
+De Food boost project is uitgevoerd naar aanleiding van de toenemende aandacht naar duurzamer eten. Duurzamer eten is echter niet makkelijk en dat is een van de grootste redenen waarom men snel kapt met het volgen van een voedingsschema. Men zou graag een voedingsschema willen volgen dat gezond en waarin veel variatie is. Dat laatste blijkt namelijk lastig te zijn, vaak hanteert men schema's die door een applicatie of een website is gemaakt waarin weinig variatie in zit waardoor men opzoek gaat naar andere oplossingen die buiten hun voedingsschema valt en de reden geeft om te stoppen met het gebruiken van de applicatie/website. Tevens is het lastig om voor ieder individu een aparte schema te maken want ieder persoon heeft een persoonlijke smaak en lichaam. De opdrachtgever wilt dus een applicatie hebben waarmee gebruikers een persoonlijk advies krijgen wat ze deze week gaan eten, zodat ze tot betere keuzes komen, maar ook gebruiksvriendelijk is.
+Dat heeft geleid tot de volgende onderzoekvraag: "Hoe kan de applicatie de best aansluitende hoofdgerechten aanraden op basis van de voorkeuren van de gebruiker?"
 
 ### Evaluation
 
-Tijdens dit project, heb ik veel nieuwe dingen geleerd. Zo ben ik achtergekomen wat Machine Learning is en waarvoor het gebruikt wordt en hoe je verschillende modellen met elkaar kan vergelijken. Ik vond het leuk om te leren hoe voorspellingen worden gedaan aan de hand van algoritmes en datasets.
+Tijdens dit project, heb ik veel nieuwe dingen geleerd. Zo ben ik achter gekomen wat Machine Learning is en waarvoor het gebruikt wordt en hoe je verschillende modellen met elkaar kan vergelijken. Ik vond het leuk om te leren hoe voorspellingen worden gedaan aan de hand van algoritmes en datasets.
 
 Voor dit project heb ik dus ook de basiscode  geschreven voor de gebruikte Machine Learning modellen. Door de kennis die ik heb opgebouwd tijdens de Data Camp courses en de filmpjes die ik online heb gekeken, heb ik de basis code geschreven waardoor elk groepslid afzonderlijk een model kon testen op de dataset die we hadden. Op de basiscode voegde allerlei regelcodes toe om de resultaten van de modellen overzichtelijker te krijgen. Verder heb ik verschillende modellen getest en met elkaar vergeleken om de beste model te vinden voor ons onderzoeksprobleem.
 
 In het vervolg zou ik me meer willen verdiepen in classificatie modellen. Ik zou graag de werking van elk model beter willen begrijpen en ook uittesten voor ons onderzoek. Tevens zou ik in het vervolg alle wereldkeukens willen meenemen bij de voorspelling want er is maar een beperkt aantal keukens gebruikt. Daarbij zou ik ook willen werken met een reële dataset i.p.v. een zelf gesimuleerde dataset.
 
 ### Conclusions
+
+Tijdens het container project, is het model op verschillende parameters gerund. Dat is gedaan zodat het model geoptimaliseerd wordt. Daarbij is een range van [0.001, 0.003, 0.01, 0.03, 0.1] meegegeven aan de Learning rate en een range van [16, 24, 32, 64, 128] aan de batch size. Vervolgens is gekeken naar de gemiddelde score van elke combinatie van de twee parameters over 1000 games. Daarbij is te concluderen dat bij een Learning rate van 0.001 en een batch size van 128 het model de hoogte gemiddelde score behaalt. Tevens kan er geconcludeerd worden dat naarmate de learning rate hoger wordt, het model steeds slechter presteert.
 ![image](https://user-images.githubusercontent.com/121435298/214647223-b07af5ae-c27e-49ac-aedd-e190559ba243.png)
 
 
+Het gemaakte LP-model genereert een infeasible oplossing. In de figuur is te zien dat container nummer 98 op een plek staat waar het niet mag. Door de positie van dat container kunnen de container met een hogere prioriteit (de groener containers) niet bereikt worden.
+![image](https://user-images.githubusercontent.com/121435298/214649951-4b0279c9-1152-47d0-96b7-ac2c102d98c3.png)
 
+De tijd dat een LP-model nodig heeft om een oplossing te generen is korter dan de tijd dat de RL-model nodig heeft om te trainen. Echter genereert het LP-model geen feasible oplossing terwijl het RL-model twee minuten nodig heeft om trainen daarna kan in het vervolg binnen enkele seconden een oplossing gegenereerd worden.
 
+Beide modellen zijn op een kleine schaal getest vergeleken met de reële situatie. Er kan dus geen uitspraak worden gemaakt over de werking van beide modellen op grotere schalen.
 
+### Planning
+
+Over het gehele periode van de minor is een scrum principe gehanteerd. Daarbij is gewerkt aan sprints van vier weken in verband met de externe presentaties. Via de scrumboard Trello wordt telkens een overzicht gemaakt van de taken. Vervolgens  worden de taken verdeeld over de groesleden. Dat gaf een overzicht van de taken en kon de voortgang van het project bewaakt worden.
+![image](https://user-images.githubusercontent.com/121435298/214658174-d75b2d2b-f3ff-41cf-bc67-62cccc6c1c83.png)
+
+Het scrumboard vond ik erg nuttig omdat dit een project is waar veel geprogrammeerd wordt en daarbij is het lastig om gezamenlijk aan de zelfde stuk code te werken. Het scrumboard zorgde ervoor dat ieder groepslid met een taak actief bezig was en kan een overzicht worden gemaakt van de afgeronde taken en de taken die nog moest gebeuren. Ik ben zeer tevreden over de gebruikte methode en voor mijn vervolg groepsprojecten zal ik het nogmaals hanteren.  
 
 
 ## Domain Knowledge
 ### Foodboost project
-#### Situatie
+
 Tijdens de minor heb ik gewerkt aan het project Food Boost. Aan het begin van het project heb ik eerst de opdracht omschrijving gelezen om de doestelling van het project beter te begrijpen. Het doel van de opdracht is om mensen te helpen hun voeding aan passen. Dat komt omdat in de laatste jaren steeds meer belangstelling is voor gezonder en duurzamer eten. Echter is het niet gemakkelijk om te bepalen of een recept duurzamer of gezonder is. Ieder persoon dient dus zijn eigen voeding en voedingsschema bij te houden om te kunnen concluderen of hij/zij gezonder of duurzamer eet en dat kost te veel tijd en energie. Dat heeft als gevolg dat mensen snel afhaken en zich niet meer bezig houden met een voedingsdieet. Voor de opdracht dient dus een onderzoeksdoel geformuleerd te worden, waar minimaal zes aan wordt gewerkt, die tot een oplossing kan leiden voor de probleemstelling.
 
 #### Actie
@@ -45,8 +57,6 @@ Nadat iedere groepslid literatuuronderzoek te hebben uitgevoerd, hebben we de on
 #### Reflectie
 In het begin ben ik niet op een geschikte onderzoeksdoel uitgekomen. Dat is het geval omdat ik te weinig aan literatuuronderzoek had gedaan en te haastig aan het project wou starten. Door alle verzamelde informatie op rijtje te hebben, heb ik een beter idee geregen over het onderzoek en zijn we als groep sneller op een onderzoeksdoel uitgekomen. in het vervolg zal ik geen overhaaste beslissingen nemen zonder voldoende literatuuronderzoek te hebben uitgevoerd en zal me meer verdiepen in het vinden van gerelateerde onderzoek i.p.v. direct starten met het vinden van een oplossing.
 
-
-###### resitricties van de data meenemen als de keukens de gesimuleerd dataset. data sets hier benoemen
 
 
 
@@ -192,10 +202,10 @@ Omdat we bij dit onderzoek opzoek zijn naar het model die het beste kan voorspel
 Maar volgens [vitalflux](https://vitalflux.com/accuracy-precision-recall-f1-score-python-example/) is de accuracy geen goede maat om modellen met elkaar te vergelijken. In dat geval dienen de modellen aan de hand van hun `roc auc score` met elkaar vergeleken te worden. Dus heb ik de roc auc score van alle modellen berekend en het model met de hoogste score gekozen. Dat laatste heb ik gedaan omdat de `roc auc score` de relatie tussen de `True positives` en de `False positives` weergeeft en hoe hoger de score hoe beter dat relatie is. De `DecisionTreeClassifier` had de hoogste score  dus heb ik het gekozen als model om ermee verder te werken.
 ![image](https://user-images.githubusercontent.com/121435298/213468324-b1a43ff6-f43d-47be-b835-065ff374b81c.png)
 
-Het model heb ik gefit op de train dataset en `X_val` mee voorspeld. Dat gaf een score van 0.7788347205707491 op trainingsset.
+Het model heb ik gefit op de train dataset en `X_val` mee voorspeld. Dat gaf een score van 0.7788347205707491 op training set.
 ![image](https://user-images.githubusercontent.com/121435298/214601728-4a125471-ab93-4333-afce-6bfac671dd06.png)
 
-Voor het model heb ik dan de accuracy score berekend en dat was een acceptabele score van 0.7900355871886121. Vervolgens heb ik de `roc auc score` van het model berekend en die was gelijk aan 0.1943464730290456. Dat is te laag en dat gaf een indicatie voor een mogelijke overfitting. 
+Voor het model heb ik dan de accuracy score berekend en dat was een acceptabele score van 0.7900355871886121. Vervolgens heb ik de `roc auc score` van het model berekend en die was gelijk aan 0.1943464730290456. Dat is te laag en dat gaf een indicatie voor een mogelijke over fitting. 
 ![image](https://user-images.githubusercontent.com/121435298/214602594-9b96fefc-68b0-419e-bad9-73a8139f295d.png)
 
 Echter zag de `Confusion matrix` niet slecht uit. Daarmee kon gelijk gezien waar de redelijke hoge accuracy score vandaan kwam. 
@@ -208,9 +218,9 @@ Echter zag de `Confusion matrix` niet slecht uit. Daarmee kon gelijk gezien waar
 ## [Evaluation en Data Visualisation](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/Foodboost%20model%20kiezen%20final%20pdf%20versie.pdf)
 ##### (Graag de pdf-file downloaden om het te kunnen bekijken. het bestand is te lang voor een volledige weergave op de website)
 
-Om het model te evalueren en om overfitting te vermijden zijn een aantal technieken die toegepast kunnen worden. Volgens [machinelearningmastery](https://machinelearningmastery.com/introduction-to-regularization-to-reduce-overfitting-and-improve-generalization-error/) is een van de methodes om de complexiteit van het model te verminden. Tevens is volgens [gitconnected](https://levelup.gitconnected.com/6-solutions-prevent-model-overfitting-9c73aa026c1) regularisatie een methode die daarbij kan helpen. En als is hyperparameters tuning een van de manieren om een model te optimaliseren, volgens [oreilly](https://www.oreilly.com/library/view/evaluating-machine-learning/9781492048756/ch04.html).
+Om het model te evalueren en om over fitting te vermijden zijn een aantal technieken die toegepast kunnen worden. Volgens [machinelearningmastery](https://machinelearningmastery.com/introduction-to-regularization-to-reduce-overfitting-and-improve-generalization-error/) is een van de methodes om de complexiteit van het model te verminderen. Tevens is volgens [gitconnected](https://levelup.gitconnected.com/6-solutions-prevent-model-overfitting-9c73aa026c1) regularisatie een methode die daarbij kan helpen. En als is hyperparameters tuning een van de manieren om een model te optimaliseren, volgens [oreilly](https://www.oreilly.com/library/view/evaluating-machine-learning/9781492048756/ch04.html).
 
-Ik ben begonnen met de hyperparameters tuning om de beste parameters van het model te vinden. Op [scikit-learn.org](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html) is te vinden dat `Max_depth` een van de parameters is die ervoor kan zorgen dat een model beter gedraagt. Ik had daarna een for-loop gemaakt die de `accuracy`, `recal`en `precision` score weergeeft die bij elk `Max_depth` hoort. Daarbij is te zien dat bij een depth van 14 en 19 het model de beste `Accuracy` score heeft. Maar om alleen de `Max-depth`te tunen is niet goenoeg daarom had ik de besluit genomen om de andere parameters ook te tunen.
+Ik ben begonnen met de hyperparameters tuning om de beste parameters van het model te vinden. Op [scikit-learn.org](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html) is te vinden dat `Max_depth` een van de parameters is die ervoor kan zorgen dat een model beter gedraagt. Ik had daarna een for-loop gemaakt die de `accuracy`, `recal`en `precision` score weergeeft die bij elk `Max_depth` hoort. Daarbij is te zien dat bij een depth van 14 en 19 het model de beste `Accuracy` score heeft. Maar om alleen de `Max-depth`te tunen is niet genoeg daarom had ik de besluit genomen om de andere parameters ook te tunen.
 ![image](https://user-images.githubusercontent.com/121435298/214603778-323860bc-6fff-470a-8faf-5748f5e14e6c.png)
 
 Bij een Datacamp course, heb ik geleerd hoe ik de hyperparameters kan tunen om het model te evalueren. Dat kan door middel van verschillende algoritmes die verschillende combinaties van de parameters van een model kan testen en de beste resultaat kan weergeven. Een van de methodes die ik heb getest is de  `GridSearchCV`. Daarbij dient wel eerst een dictionary worden gemaakt van de hyperparameters die getuned kunnen worden.
@@ -224,19 +234,19 @@ Na de uitvoering van de `GridSearchCV`, heb ik de beste parameters aan gevraagd 
 ![image](https://user-images.githubusercontent.com/121435298/214604163-8b86c872-d5f6-4f50-b220-801832e58066.png)
 ![image](https://user-images.githubusercontent.com/121435298/214604255-55f3fd7f-0841-471f-baa3-f44dacfaa4ea.png)
 
-Met de beste estimator van het model heb ik `X_val` voorspeld en de accuracy score en roc score berekend. De roc score is erg laag, en dat houdt in dat de relatie tussen de `True positives`en de `False positives` selcht. En dat leide tot de conclusie dat het model nog overfit is.
+Met de beste estimator van het model heb ik `X_val` voorspeld en de accuracy score en roc score berekend. De roc score is erg laag, en dat houdt in dat de relatie tussen de `True positives`en de `False positives`  slecht. En dat leidde tot de conclusie dat het model nog overfit is.
 ![image](https://user-images.githubusercontent.com/121435298/214609708-355771fa-f4ad-4131-b01f-9bd9980346c8.png)
 
 Vervolgens heb ik geprobeerd om de data te schalen om daarmee betere resultaten te krijgen. Daarna heb ik de beste estimator van de grid op de geschaalde data gefit en `X_val`mee voorspeld`.
 ![image](https://user-images.githubusercontent.com/121435298/214612285-bd1d4c51-8a26-45e9-b534-29d731be2a34.png)
 
-Het model gaf werderom weer een slechte verhouding van de roc en de accuracy scores. 
+Het model gaf wederom weer een slechte verhouding van de roc en de accuracy scores. 
 ![image](https://user-images.githubusercontent.com/121435298/214612728-5dcb6316-b21b-428f-a131-93eb4162b9aa.png)
 
  En ook is aan de `Confusion matrix` te zien dat het model veel foute voorspellingen maakt.
  ![image](https://user-images.githubusercontent.com/121435298/214613473-79a001f9-fbbb-41c6-83bc-bf4c5f7e0988.png)
 
-Omdat de `Roc auc score` elke keer zou laag was wou ik nagaan waarom dat het geval en welke klassen zorgen voor een lage score. Ik heb een plot gemaakt waarin de roc score van elke klasse tegenover de rest weergeft. Daarin is te zien dat keukennummers vier , vijf en zes hoger scoren dat de rest van de keukennummers. En dat is de reden van de lage roc score.
+Omdat de `Roc auc score` elke keer zou laag was wou ik nagaan waarom dat het geval en welke klassen zorgen voor een lage score. Ik heb een plot gemaakt waarin de roc score van elke klasse tegenover de rest weergeeft. Daarin is te zien dat keukennummers vier , vijf en zes hoger scoren dat de rest van de keukennummers. En dat is de reden van de lage roc score.
 ![image](https://user-images.githubusercontent.com/121435298/214614608-8c012417-67cd-41a9-b4bb-aa9d1181423c.png)
 
 Omdat het model, na een evaluatie poging, niet beter is geworden heb ik besloten om een andere methode te gebruiken voor de hyperparameters tuning. Daarvoor heb ik `RandomizedSearchCV` gebruikt. Na het uitvoeren, kreeg ik andere parameters dan de `GridSearchCV` en ik heb daarna dezelfde stappen genomen om te testen of het model het beter doet.
@@ -244,10 +254,10 @@ Omdat het model, na een evaluatie poging, niet beter is geworden heb ik besloten
 ![image](https://user-images.githubusercontent.com/121435298/214615568-9fe3ba45-511e-4750-ae05-196bdd1e3fd1.png)
 
 
-Het model had een score van 0.9988109393579072 op de trainings set en een score van 0.8042704626334519 op de trainingsset. De score op de trainingsset is hoger dan op de validatie set en dat gaf een reden om te kijken of het model overfit was.
+Het model had een score van 0.9988109393579072 op de training set en een score van 0.8042704626334519 op de training set. De score op de training set is hoger dan op de validatie set en dat gaf een reden om te kijken of het model overfit was.
 ![image](https://user-images.githubusercontent.com/121435298/214616311-82433b3c-d20b-42bc-8316-fe2cba6384fe.png)
 
-Met het model heb ik `X_val` voorspeld en de bijbehorende accuracy score en roc berekend. De roc score is in dit geval wel hoger dan het eeerste model en het model van de gridsearch. Bij de roc auc score geldt wel dat hoe hoger de score hoe beter. Het model heeft wel een hoger roc score mar 0.49 is niet hoog genoeg om te kunnen zeggen dat de relatie tussen `True positives` en `False positives` goed is.
+Met het model heb ik `X_val` voorspeld en de bijbehorende accuracy score en roc berekend. De roc score is in dit geval wel hoger dan het eerste model en het model van de gridsearch. Bij de roc auc score geldt wel dat hoe hoger de score hoe beter. Het model heeft wel een hoger roc score mar 0.49 is niet hoog genoeg om te kunnen zeggen dat de relatie tussen `True positives` en `False positives` goed is.
 ![image](https://user-images.githubusercontent.com/121435298/214617208-d1285f20-8d9f-4bd6-af3a-9474fdc8d07b.png)
 
 Voor dit model heb ik ook de roc auc score van elke klasse apart geplot en daar is te zien dat de score van alle klasse redelijk gelijk is aan elkaar. 
@@ -260,7 +270,7 @@ De confusion matrix geeft aan dat het model de keukennummers zes en drie niet go
 ![image](https://user-images.githubusercontent.com/121435298/214639469-9c769075-2504-4796-ad28-97bcb83af0a9.png)
 
 
-Aan de hand van alle resultaten kon ik twee dingen concluderen. Het model is is het beste model om de wereld keukenss te voorspellen of ik maak ergens een fout bij het berekenen van de `roc auc score`dat het telkens zo laag. Ik wou het laatste nog verder uitzoeken maar op dat moment had de groep besloten om `KNeighborsClassifier` te gebruiken en zijn we daarmee doorgegaan.
+Aan de hand van alle resultaten kon ik twee dingen concluderen. Het model is is het beste model om de wereld keukens te voorspellen of ik maak ergens een fout bij het berekenen van de `roc auc score` dat het telkens zo laag. Ik wou het laatste nog verder uitzoeken maar op dat moment had de groep besloten om `KNeighborsClassifier` te gebruiken en zijn we daarmee doorgegaan.
 
 
 ## Communication
@@ -269,15 +279,15 @@ Aan de hand van alle resultaten kon ik twee dingen concluderen. Het model is is 
 Aan het einde van het onderzoek dient een paper geschreven te worden. Dat moet informatie geven over de probleemstelling, de oplossingsmethode en een conclusie. Eerst heb ik, samen met Brian, naar papers gekeken om een lay-out voor ons paper samen te stellen. Vervolgens hebben we gekeken naar de documenten die de school beschikbaar heeft gesteld om een paper te kunnen schrijven. Zodoende hebben we een lay-out gemaakt voor ons paper die bestaat uit de volgende koppen: Abstract, Introductie, Data, Technieken, Resultaten, Conclusie, Future work, Referenties en gerelateerde werk en als laatste de Begrippenlijst. Vervolgens heb ik onder elke kopje de verwachte resultaat in steek woorden neergezet, zodat het schrijven voor iedereen makkelijker wordt.
 ![image](https://user-images.githubusercontent.com/121435298/214298042-e2371b47-3ef7-4338-ab6d-7c46c6b55540.png)
 
-Daarna heb ik, na de takenverdeling, het kopje Inleiding geschreven van de paper. Om dat te kunnen doen heb ik eerst onderzoek gedaan naar welke elementen een inleiding van een paper moet bevatten. Volgens [www.universiteitleiden.nl](https://www.universiteitleiden.nl/binaries/content/assets/rechtsgeleerdheid/fiscaal-en-economische-vakken/economie/richtlijnen-bij-het-schrijven-van-een-paper.pdf) dient de inleiding een duidelijke beschrijving geven over waar de paper over gaat, de vragen die behandeld zijn tijdens het uitgevoerde onderzoek, welk theoretsich kader wordt gebruikt en een leeswijzer die de structuur van de paper weergeeft. Zo heb ik een inleiding geschreven die bestaat uit de volgende deelkopjes:  Aanleiding, Doelstelling en Stuctuurbeschrijving. Voor de aanleiding heb ik gekeken naar de document die door school beschikbaar zijn gesteld  en de website van het bedrijf [Cofano](https://www.cofano.nl/nl/) bezocht om daaruit bruikbare informatie te halen. Voor de doelstelling, heb ik , samen met Brian en Jurriaan, vragen opgesteld die brian en Juriaan tijdens een intervieuw aan de begeledier hebben gesteld om zodoende een concrete doelstelling en hoofdvraag te formuleren. Als laastste heb ik de lay-out van de paper gebruikt om de structuurbeschrijving van de paper te schrijven.
+Daarna heb ik, na de takenverdeling, het kopje Inleiding geschreven van de paper. Om dat te kunnen doen heb ik eerst onderzoek gedaan naar welke elementen een inleiding van een paper moet bevatten. Volgens [www.universiteitleiden.nl](https://www.universiteitleiden.nl/binaries/content/assets/rechtsgeleerdheid/fiscaal-en-economische-vakken/economie/richtlijnen-bij-het-schrijven-van-een-paper.pdf) dient de inleiding een duidelijke beschrijving geven over waar de paper over gaat, de vragen die behandeld zijn tijdens het uitgevoerde onderzoek, welk theoretisch kader wordt gebruikt en een leeswijzer die de structuur van de paper weergeeft. Zo heb ik een inleiding geschreven die bestaat uit de volgende deelkopjes:  Aanleiding, Doelstelling en Structuurbeschrijving. Voor de aanleiding heb ik gekeken naar de document die door school beschikbaar zijn gesteld  en de website van het bedrijf [Cofano](https://www.cofano.nl/nl/) bezocht om daaruit bruikbare informatie te halen. Voor de doelstelling, heb ik , samen met Brian en Jurriaan, vragen opgesteld die Brian en Jurriaan tijdens een intervieuw aan de begeledier hebben gesteld om zodoende een concrete doelstelling en hoofdvraag te formuleren. Als laatste heb ik de lay-out van de paper gebruikt om de structuurbeschrijving van de paper te schrijven.
 
-Na dat Milan klaar was met het schrijven van het kopje Resultaten (RL-model stukje), heb ik het kopje Discussie (RL-model stukje) geschreven. Daarbij heb ik resultaten eerst besturdeerd om daaruit discussie punten te formuleren. Eerst heb ik gekeken wat het model goed kan en daarna de minpunten van het model verzameld en alle verzamelde punten omschreven naar een stuk tekst die in de paper onder het kopje discussie staat.
+Na dat Milan klaar was met het schrijven van het kopje Resultaten (RL-model stukje), heb ik het kopje Discussie (RL-model stukje) geschreven. Daarbij heb ik resultaten eerst bestudeerd om daaruit discussie punten te formuleren. Eerst heb ik gekeken wat het model goed kan en daarna de minpunten van het model verzameld en alle verzamelde punten omschreven naar een stuk tekst die in de paper onder het kopje discussie staat.
 
 Tevens hebben we als groep om feedback gevraagd bij de begeleiders. Voor mijn geschreven stukken heb ik de feedback verwerkt in de paper en ik heb geholpen met het verwerken van de rest van de feedback.
 
 ### Presentations
 
 Tijdens het project heb ik een aantal interne en externe presentaties gegeven. Zo heb ik mezelf aangegeven om te presenteren voor de presentatie beurt van de eerste week. Daarbij de eerste drie slides van de [power point](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/Week%201%20-%20Presentatie.pptx) gepresenteerd.
-Vervolgens kwam ik weer aan de beurt in week 6 met de externe presentatie. Daarbij heb ik de slide nummers [seven, acht en negen](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/eindpresentatie%20foodboost%20versie%202.pptx) gepresenteerd.
+Vervolgens kwam ik weer aan de beurt in week 6 met de externe presentatie. Daarbij heb ik de slide nummers [zeven, acht en negen](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/eindpresentatie%20foodboost%20versie%202.pptx) gepresenteerd.
 In week 18 heb ik [slides](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/Presentatie.pptx) gepresenteerd.
 Volgens de taakverdeling ben ik aan de beurt voor de laatste externe presentatie die in Den Haag wordt gegeven. Daarbij zal ik ook een deel van de presentatie geven maar helaas is de Power point op dit moment nog niet gemaakt dus kan ik niet benoemen welke slides ik zal behandelen.
