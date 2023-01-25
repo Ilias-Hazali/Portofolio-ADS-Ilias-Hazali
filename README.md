@@ -136,7 +136,7 @@ Later zijn we nog doorgegaan met een andere [dataset](https://github.com/Ilias-H
 Op het moment dat Milan de gebruikerssimulatie al klaar had staan, had ik het gevoel dat ik over te weinig `pandas` kennis beschik. Ik heb sindsdien meer Datacamp courses uitgevoerd zodat ik mijn programmeer vaardigheden kan verbeteren. Ik heb veel geoefend met dataframes en ik heb nieuwe `pandas` technieken wat mij heeft geholpen verder te werken aan de dataset. Zo heb ik geleerd hoe ik dataframes beter kan bewerken door ze eerst goed te inspecteren en te prepareren en in het vervolg zal ik dezelfde methode aanhouden op het moment dat ik over te weinig kennis beschik om een onderzoek te kunnen uitvoeren. 
 
 
-## [Predictive Models en Data Visualization](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/Foodboost%20model%20kiezen%20pdf.pdf)
+## [Predictive Models en Data Visualization]([https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/Foodboost%20model%20kiezen%20pdf.pdf](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/Foodboost%20model%20kiezen%20final%20pdf%20versie.pdf))
 ##### (Graag de pdf-file downloaden om het te kunnen bekijken. het bestand is te lang voor een volledige weergave op de website)
 
 Het idee is dus om de favoriete keuken van een gebruiker te voorspellen zodat er een goede aanbeveling wordt gedaan binnen de voorspelde keuken. Daarvoor is een model benodigd die de juiste keuken van elke gebruiker kan voorspellen. Na de dataset te hebben geïnspecteerd en de doelvariabele te hebben gedefinieerd, is er uitgerold dat we hier te maken hebben met een classificatie. Volgens [askpython](https://www.askpython.com/python/regression-vs-classification) , dient bij een categorische output een classificatie model gebruikt te worden om voorspellingen te kunnen doen.
@@ -200,7 +200,7 @@ Echter zag de `Confusion matrix` niet slecht uit. Daarmee kon gelijk gezien waar
 
 
 
-## [Evaluation en Data Visualisation](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/Foodboost%20model%20kiezen%20pdf.pdf)
+## [Evaluation en Data Visualisation]([https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/Foodboost%20model%20kiezen%20pdf.pdf](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/Foodboost%20model%20kiezen%20final%20pdf%20versie.pdf))
 ##### (Graag de pdf-file downloaden om het te kunnen bekijken. het bestand is te lang voor een volledige weergave op de website)
 
 Om het model te evalueren en om overfitting te vermijden zijn een aantal technieken die toegepast kunnen worden. Volgens [machinelearningmastery](https://machinelearningmastery.com/introduction-to-regularization-to-reduce-overfitting-and-improve-generalization-error/) is een van de methodes om de complexiteit van het model te verminden. Tevens is volgens [gitconnected](https://levelup.gitconnected.com/6-solutions-prevent-model-overfitting-9c73aa026c1) regularisatie een methode die daarbij kan helpen. En als is hyperparameters tuning een van de manieren om een model te optimaliseren, volgens [oreilly](https://www.oreilly.com/library/view/evaluating-machine-learning/9781492048756/ch04.html).
