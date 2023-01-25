@@ -187,14 +187,20 @@ Omdat we bij dit onderzoek opzoek zijn naar het model die het beste kan voorspel
 Maar volgens [vitalflux](https://vitalflux.com/accuracy-precision-recall-f1-score-python-example/) is de accuracy geen goede maat om modellen met elkaar te vergelijken. In dat geval dienen de modellen aan de hand van hun `roc auc score` met elkaar vergeleken te worden. Dus heb ik de roc auc score van alle modellen berekend en het model met de hoogste score gekozen. Dat laatste heb ik gedaan omdat de `roc auc score` de relatie tussen de `True positives` en de `False positives` weergeeft en hoe hoger de score hoe beter dat relatie is. De `DecisionTreeClassifier` had de hoogste score  dus heb ik het gekozen als model om ermee verder te werken.
 ![image](https://user-images.githubusercontent.com/121435298/213468324-b1a43ff6-f43d-47be-b835-065ff374b81c.png)
 
-Het model heb ik gefit op de train dataset en `X_val` mee voorspeld. Da dat gaf een score van 0.7829181494661922.
-![image](https://user-images.githubusercontent.com/121435298/213924307-3476385a-30f7-4655-9dce-3c3b1cc52ce4.png)
+Het model heb ik gefit op de train dataset en `X_val` mee voorspeld. Dat gaf een score van 0.7651245551601423 op de validatie set. En een score van 0.7752675386444708 op de trainingset.
+![image](https://user-images.githubusercontent.com/121435298/214589104-6f7111da-d2a7-4abe-9787-018f4dd799df.png)
+
+Omdat de score van het model op de trainingset hoger is dan op de validatie, wou ik checken of er overfiiting ondervind. Het model had een accurary van 0.7651245551601423 en een bijzondere lage `roc_auc score` van 0.4902439024390244 en dat gaf een mogelijke indicatie voor overfitiing.
+![image](https://user-images.githubusercontent.com/121435298/214590730-28742a1e-c5bd-455c-ba87-8462a06d5007.png)
+
+
+
 
 
 ## [Evaluation en Data Visualisation](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/Foodboost%20model%20kiezen%20pdf.pdf)
 ##### (Graag de pdf-file downloaden om het te kunnen bekijken. het bestand is te lang voor een volledige weergave op de website)
 
-Om het model te evalueren dienen parameters gekozen te worden waarbij het model beter scoort op dezelfde dataset. Op [scikit-learn.org](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html) is te vinden dat `Max_depth` een van de parameters is die ervoor kan zorgen dat een model beter gedraagt. Ik had daarna een for-loop gemaakt die de `accuracy`, `recal`en `precision` score weergeeft die bij elk `Max_depth` hoort. Daarbij is te zien dat bij een depth van 19 het model de beste `Accuracy` score heeft. Maar de recall en precision zijn niet hoog genoeg. Ik had de besluit genomen om de andere parameters ook te tunen.
+Om het model te evalueren en om overfitting te vermijden dienen parameters gekozen te worden waarbij het model beter scoort op dezelfde dataset. Op [scikit-learn.org](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html) is te vinden dat `Max_depth` een van de parameters is die ervoor kan zorgen dat een model beter gedraagt. Ik had daarna een for-loop gemaakt die de `accuracy`, `recal`en `precision` score weergeeft die bij elk `Max_depth` hoort. Daarbij is te zien dat bij een depth van 19 het model de beste `Accuracy` score heeft. Maar de recall en precision zijn niet hoog genoeg. Ik had de besluit genomen om de andere parameters ook te tunen.
 ![image](https://user-images.githubusercontent.com/121435298/213935605-1eb30abe-90bc-4c6e-b28f-58570431cbbc.png)
 
 
@@ -240,7 +246,7 @@ Vervolgens heb ik het model gebruikt om daarmee de test dataset te voorspellen. 
 Ook verschilt de conclusie dat bij de `Cocnfusion matrix` wordt getrokken dan bij de `roc auc score`. 
 ![image](https://user-images.githubusercontent.com/121435298/213930387-10be0124-6948-42f5-ba97-37fc5e9ef369.png)
 
-Aan de hand van alle resultaten kon ik concluderen dat het model niet geschikt was en op dat moment had de groep besloten om `KNeighborsClassifier` te gebruiken en zijn we daarmee doorgegaan.
+Aan de hand van alle resultaten kon ik concluderen dat het model was en op dat moment had de groep besloten om `KNeighborsClassifier` te gebruiken en zijn we daarmee doorgegaan.
 
 
 
