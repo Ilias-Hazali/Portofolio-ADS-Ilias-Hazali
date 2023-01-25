@@ -227,9 +227,14 @@ Met de beste estimator van het model heb ik `X_val` voorspeld en de accuracy sco
 Vervolgens heb ik geprobeerd om de data te schalen om daarmee betere resultaten te krijgen. Daarna heb ik de beste estimator van de grid op de geschaalde data gefit en `X_val`mee voorspeld`.
 ![image](https://user-images.githubusercontent.com/121435298/214612285-bd1d4c51-8a26-45e9-b534-29d731be2a34.png)
 
-Het model gaf werderom weer een slechte verhouding van de roc en de accuracy scores.
+Het model gaf werderom weer een slechte verhouding van de roc en de accuracy scores. 
 ![image](https://user-images.githubusercontent.com/121435298/214612728-5dcb6316-b21b-428f-a131-93eb4162b9aa.png)
 
+ En ook is aan de `Confusion matrix` te zien dat het model veel foute voorspellingen maakt.
+ ![image](https://user-images.githubusercontent.com/121435298/214613473-79a001f9-fbbb-41c6-83bc-bf4c5f7e0988.png)
+
+Omdat de `Roc auc score` elke keer zou laag was wou ik nagaan waarom dat het geval en welke klassen zorgen voor een lage score. Ik heb een plot gemaakt waarin de roc score van elke klasse tegenover de rest weergeft. Daarin is te zien dat keukennummers vier , vijf en zes hoger scoren dat de rest van de keukennummers. En dat is de reden van de lage roc score.
+![image](https://user-images.githubusercontent.com/121435298/214614608-8c012417-67cd-41a9-b4bb-aa9d1181423c.png)
 
 
 
@@ -242,26 +247,26 @@ Het model gaf werderom weer een slechte verhouding van de roc en de accuracy sco
 
 
 
-Het best model heb ik dan gefit op de train dataset en `X_test` mee voorspeld.
-![image](https://user-images.githubusercontent.com/121435298/213885445-093d7492-91c2-4d70-9a0f-611460c24e15.png)
 
-Ik had het vermoeden dat het model overfit was omdat de `roc auc score` te laag was. De score was gelijk aan 0.23943089430894307 en dat houdt dus in dat de relatie tussen `True positives`en de `False positives` slecht was. 
-![image](https://user-images.githubusercontent.com/121435298/213924395-c26c0975-4b98-43c0-af92-d93c2b78f150.png)
 
-Ook had ik het vermoeden dat de methode die ik gebruikte om de `roc auc score` te berekenen niet goed was niet goed was, dus heb ik besloten om naar de score van elke keuken afzonderlijk te bekijken. Daarbij ben ik gekomen op het volgend resultaat:
-![image](https://user-images.githubusercontent.com/121435298/213924410-2b2e6750-f955-47a1-89d0-ceb76b4bbd97.png)
 
-Daarbij heb ik geconcludeerd dat het model overfit was en dat het een aantal klassen goed voorspeld en andere minder goed. Zo is te zien dat het model het beste werkt op keukennummer 6 (`Mediteraans`) . Daaropvolgend keukennummer 5 (`Amerikaans`), keukennummer 4 (`Mexicaans`) en keukennummer 3 (`Italiaans`). Bij de overige keukens is het model niet geschikt om voorspellingen mee te doen. Dus dat bracht mij tot de conclusie dat de gekozen model niet de beste voorspellingen kan genereren. Tevens heb ik gekeken naar de bij behorende `Confusion matrix`. Daarbij was iets anders te concluderen, daar is te zien dat  model het goed doet bij het voorspellen van de keukennummers 1 en 4 en  bij de rest niet. 
-![image](https://user-images.githubusercontent.com/121435298/213924686-c2384119-ae43-4089-8c7c-84d93b06e261.png)
-
-Het laatste conclusie kon ook getrokken worden na het bekijken van de `Calssification report` van het model. Daar is ook te zien dat de keukennummers 1 en 4 hoger scoren dan de rest van de keukennummers.
-![image](https://user-images.githubusercontent.com/121435298/213925379-5e7c992e-ac5e-46b1-a613-d87c32fb079d.png)
 
 Omdat het model, na een evaluatie poging, niet beter is geworden heb ik besloten om een andere methode te gebruiken voor de hyperparameters tuning. Daarvoor heb ik `RandomizedSearchCV` gebruikt. Na het uitvoeren, kreeg ik andere parameters dan de `GridSearchCV` en ik heb daarna dezelfde stappen genomen om te testen of het model het beter doet.
-![image](https://user-images.githubusercontent.com/121435298/213926026-fffd012d-5c8b-4136-805b-6514dc29d7b1.png)
+![image](https://user-images.githubusercontent.com/121435298/214615522-b2c1112b-7e68-4339-9e55-89dd46fe4626.png)
+![image](https://user-images.githubusercontent.com/121435298/214615568-9fe3ba45-511e-4750-ae05-196bdd1e3fd1.png)
 
-Het model gaf geen betere score op de validatie set en die was gelijk aan 0.7651245551601423
-![image](https://user-images.githubusercontent.com/121435298/213926042-2c5884f4-5936-4721-826d-53c7297ec931.png)
+
+Het model had een score van 0.9988109393579072 op de trainings set en een score van 0.8042704626334519. De score op de trainingsset is hoger dan op de validatie set en dat gaf een reden om te kijken of het model overfit was.
+![image](https://user-images.githubusercontent.com/121435298/214616311-82433b3c-d20b-42bc-8316-fe2cba6384fe.png)
+
+Met het model heb ik `X_val` voorspeld en de bijbehorende accuracy score en roc berekend. De roc score is in dit geval wel hoger dan het eeerste model en het model van de gridsearch. Bij de roc auc score geldt wel dat hoe hoger de score hoe beter. Het model heeft wel een hoger roc score mar 0.49 is niet hoog genoeg om te kunnen zeggen dat de relatie tussen `True positives` en `Falase positives` goed is.
+![image](https://user-images.githubusercontent.com/121435298/214617208-d1285f20-8d9f-4bd6-af3a-9474fdc8d07b.png)
+
+Voor dit model heb ik ook de roc auc score van elke klasse apart geplot en daar is te zien dat de score van alle klasse redelijk gelijk is aan elkaar. 
+![image](https://user-images.githubusercontent.com/121435298/214618659-11f53396-0fbf-41d4-8ad6-256aa588a800.png)
+
+
+
 
 Vervolgens heb ik het model gebruikt om daarmee de test dataset te voorspellen. En daarbij was ook te concluderen dat model niet alle keukens goed kan voorspellen. Zo is de `roc auc score` van de keukennummer zes, vijf, vier en drie hoger dan de rest.
 ![image](https://user-images.githubusercontent.com/121435298/213930226-73cb0044-e56f-4196-81aa-b7575123dee6.png)
