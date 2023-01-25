@@ -1,4 +1,4 @@
-#### Het is me helaas niet gelukt om de main reader als een soort structuurbeschrijving te maken vandaar dat ik in de main reader alles heb behandeld. Mijn excuses voor het ongemak
+#### Het is me helaas niet gelukt om de main reader als een soort structuurbeschrijving te maken vandaar dat ik in de main reader alles heb behandeld. Mijn excuses voor het ongemak.
 
 # Portofolio Ilias Hazali
 ## [Datacamp Courses](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/Datacamp%20assignement.jpg)![](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/datacamp%20course%2015%20van%20de%2016.jpg)
