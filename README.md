@@ -145,7 +145,7 @@ De dataset heb ik geïmporteerd en geïnspecteerd en vervolgens de kolommen van 
 Omdat de doelvariabele een categorische variabele is, heb ik besloten om het om te zetten naar een numerieke variabele. 
 ![image](https://user-images.githubusercontent.com/121435298/212978625-e94b3385-0c1f-4db6-891f-7b813e60e321.png)
 
-Dat heb ik als volgt gedaan: De Aziatische keuken kreeg het getal 0, Frans:1, Hollands:2, Italiaans:3, Mexicaans:4, Amerikaans:5, Mediteraans:6.
+Dat heb ik als volgt gedaan: De Aziatische keuken kreeg het getal 0, Frans: 1, Hollands: 2, Italiaans: 3, Mexicaans: 4, Amerikaans: 5, Mediteraans: 6.
 ![image](https://user-images.githubusercontent.com/121435298/212978832-4632f105-37ec-48ff-89ce-1f9afee13c77.png)![image](https://user-images.githubusercontent.com/121435298/212978878-72f49850-f142-4362-ad2f-cb47205cbdc2.png)
 
  Vervolgens heb ik de X en y gedefinieerd.
@@ -188,7 +188,7 @@ Het model heb ik gefit op de train dataset en `X_val` mee voorspeld. Dat gaf een
 Voor het model heb ik dan de accuracy score berekend en dat was een acceptabele score van 0.7900355871886121. Vervolgens heb ik de `roc auc score` van het model berekend en die was gelijk aan 0.1943464730290456. Dat is te laag en dat gaf een indicatie voor een mogelijke over fitting. 
 ![image](https://user-images.githubusercontent.com/121435298/214602594-9b96fefc-68b0-419e-bad9-73a8139f295d.png)
 
-Echter zag de `Confusion matrix` niet slecht uit. Daarmee kon gelijk gezien waar de redelijke hoge accuracy score vandaan kwam. 
+Aan de `Confusion matrix`is te zien dat het model goed doet bij het voorspellen een aantal keukens en bij andere niet. 
 ![image](https://user-images.githubusercontent.com/121435298/214603259-35105e8c-d19a-40f8-a7fc-1dc517a2fd86.png)
 
 
@@ -198,7 +198,7 @@ Echter zag de `Confusion matrix` niet slecht uit. Daarmee kon gelijk gezien waar
 ## [Evaluation en Data Visualisation](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/Foodboost%20model%20kiezen%20final%20pdf%20versie.pdf)
 ##### (Graag de pdf-file downloaden om het te kunnen bekijken. het bestand is te lang voor een volledige weergave op de website)
 
-Om het model te evalueren en om over fitting te vermijden zijn een aantal technieken die toegepast kunnen worden. Volgens [machinelearningmastery](https://machinelearningmastery.com/introduction-to-regularization-to-reduce-overfitting-and-improve-generalization-error/) is een van de methodes om de complexiteit van het model te verminderen. Tevens is volgens [gitconnected](https://levelup.gitconnected.com/6-solutions-prevent-model-overfitting-9c73aa026c1) regularisatie een methode die daarbij kan helpen. En als is hyperparameters tuning een van de manieren om een model te optimaliseren, volgens [oreilly](https://www.oreilly.com/library/view/evaluating-machine-learning/9781492048756/ch04.html).
+Om het model te evalueren en om over fitting te vermijden zijn een aantal technieken die toegepast kunnen worden. Volgens [v7labs.com](https://www.v7labs.com/blog/overfitting) zijn er een antal methodes om overfitting te detecteren en op te lossen. Zo is regulisatie, meer data toevoegen aan de trainings set, hyperparameters tuning en features selection allemaal methodes om overfitting op te lossen. 
 
 Ik ben begonnen met de hyperparameters tuning om de beste parameters van het model te vinden. Op [scikit-learn.org](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html) is te vinden dat `Max_depth` een van de parameters is die ervoor kan zorgen dat een model beter gedraagt. Ik had daarna een for-loop gemaakt die de `accuracy`, `recal`en `precision` score weergeeft die bij elk `Max_depth` hoort. Daarbij is te zien dat bij een depth van 14 en 19 het model de beste `Accuracy` score heeft. Maar om alleen de `Max-depth`te tunen is niet genoeg daarom had ik de besluit genomen om de andere parameters ook te tunen.
 ![image](https://user-images.githubusercontent.com/121435298/214603778-323860bc-6fff-470a-8faf-5748f5e14e6c.png)
