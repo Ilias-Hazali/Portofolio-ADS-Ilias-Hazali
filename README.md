@@ -8,16 +8,17 @@ Tijdens de minor heb ik een aantal Datacamp 15 van 16 cursussen afgerond. [Hier]
 ## Research Projects
 ### Task definition
 
-De Food boost project is uitgevoerd naar aanleiding van de toenemende aandacht naar duurzamer eten. Duurzamer eten is echter niet makkelijk en dat is een van de grootste redenen waarom men snel kapt met het volgen van een voedingsschema. Men zou graag een voedingsschema willen volgen dat gezond en waarin veel variatie is. Dat laatste blijkt namelijk lastig te zijn, vaak hanteert men schema's die door een applicatie of een website is gemaakt waarin weinig variatie in zit waardoor men opzoek gaat naar andere oplossingen die buiten hun voedingsschema valt en de reden geeft om te stoppen met het gebruiken van de applicatie/website. Tevens is het lastig om voor ieder individu een aparte schema te maken want ieder persoon heeft een persoonlijke smaak en lichaam. De opdrachtgever wilt dus een applicatie hebben waarmee gebruikers een persoonlijk advies krijgen wat ze deze week gaan eten, zodat ze tot betere keuzes komen, maar ook gebruiksvriendelijk is.
+De Food boost project is uitgevoerd naar aanleiding van de toenemende aandacht naar duurzamer eten. Duurzamer eten is echter niet makkelijk en dat is een van de grootste redenen waarom men snel kapt met het volgen van een voedingsschema. Men zou graag een voedingsschema willen volgen dat gezond is en waar veel variatie in zit. Dat laatste blijkt namelijk lastig te zijn, vaak hanteert men schema's die door een applicatie of een website zijn gemaakt waarin weinig variatie in zit waardoor men opzoek gaat naar andere oplossingen die buiten hun voedingsschema vallen en dat is vaak de reden waarom ze stoppen met het gebruiken van de applicatie/website. Tevens is het lastig om voor ieder individu een aparte schema te maken want ieder persoon heeft een persoonlijke smaak en lichaamsbouw. De opdrachtgever wilt daarom een applicatie hebben waarmee gebruikers een persoonlijk advies krijgen wat ze deze week gaan eten, zodat ze tot betere keuzes komen, maar ook gebruiksvriendelijk is.
 Dat heeft geleid tot de volgende onderzoekvraag: "Hoe kan de applicatie de best aansluitende hoofdgerechten aanraden op basis van de voorkeuren van de gebruiker?"
 
 ### Evaluation
 
-Tijdens dit project, heb ik veel nieuwe dingen geleerd. Zo ben ik achter gekomen wat Machine Learning is en waarvoor het gebruikt wordt en hoe je verschillende modellen met elkaar kan vergelijken. Ik vond het leuk om te leren hoe voorspellingen worden gedaan aan de hand van algoritmes en datasets.
+Tijdens dit project, heb ik veel nieuwe dingen geleerd. Zo ben ik achter gekomen wat Machine Learning is en waarvoor het gebruikt wordt en hoe ik verschillende modellen met elkaar kan vergelijken. Ik vond het leuk om te leren hoe voorspellingen worden gedaan aan de hand van algoritmes en datasets.
 
 Voor dit project heb ik dus ook de basiscode  geschreven voor de gebruikte Machine Learning modellen. Door de kennis die ik heb opgebouwd tijdens de Data Camp courses en de filmpjes die ik online heb gekeken, heb ik de basis code geschreven waardoor elk groepslid afzonderlijk een model kon testen op de dataset die we hadden. Op de basiscode voegde allerlei regelcodes toe om de resultaten van de modellen overzichtelijker te krijgen. Verder heb ik verschillende modellen getest en met elkaar vergeleken om de beste model te vinden voor ons onderzoeksprobleem.
+ 
+Tijdens dit project zijn maar een aantal classificatie modellen met elkaar vergeleken. Ik zou me graag willen verdieppen in andere classificatie modellen en ze allemaal wilen testen voor ons casus. Tevens wil ik me meer verdiepen in het evaluatieproces van alle modellen en meer evaluatie mothodes willen toepassen om de werking daarvan onder de knie te krijgen. Als laatste zou ik in het vervolg ons casus willen uitbreiden naar alle wereldkeuekens en daarbij een reële dataset willen gebruiken i.p.v. een gesimuleerde dataset. 
 
-In het vervolg zou ik me meer willen verdiepen in classificatie modellen. Ik zou graag de werking van elk model beter willen begrijpen en ook uittesten voor ons onderzoek. Tevens zou ik in het vervolg alle wereldkeukens willen meenemen bij de voorspelling want er is maar een beperkt aantal keukens gebruikt. Daarbij zou ik ook willen werken met een reële dataset i.p.v. een zelf gesimuleerde dataset.
 
 ### Conclusions
 
@@ -28,16 +29,16 @@ Tijdens het container project, is het model op verschillende parameters gerund. 
 Het gemaakte LP-model genereert een infeasible oplossing. In de figuur is te zien dat container nummer 98 op een plek staat waar het niet mag. Door de positie van dat container kunnen de container met een hogere prioriteit (de groener containers) niet bereikt worden.
 ![image](https://user-images.githubusercontent.com/121435298/214649951-4b0279c9-1152-47d0-96b7-ac2c102d98c3.png)
 
-De tijd dat een LP-model nodig heeft om een oplossing te generen is korter dan de tijd dat de RL-model nodig heeft om te trainen. Echter genereert het LP-model geen feasible oplossing terwijl het RL-model twee minuten nodig heeft om trainen daarna kan in het vervolg binnen enkele seconden een oplossing gegenereerd worden.
+De tijd dat een LP-model nodig heeft om een oplossing te generen is korter dan de tijd dat de RL-model nodig heeft om te trainen. Echter genereert het LP-model geen feasible oplossing terwijl het RL-model twee minuten nodig heeft om trainen daarna kan het in het vervolg binnen enkele seconden een oplossing genereren.
 
 Beide modellen zijn op een kleine schaal getest vergeleken met de reële situatie. Er kan dus geen uitspraak worden gemaakt over de werking van beide modellen op grotere schalen.
 
 ### Planning
 
-Over het gehele periode van de minor is een scrum principe gehanteerd. Daarbij is gewerkt aan sprints van vier weken in verband met de externe presentaties. Via de scrumboard Trello wordt telkens een overzicht gemaakt van de taken. Vervolgens  worden de taken verdeeld over de groesleden. Dat gaf een overzicht van de taken en kon de voortgang van het project bewaakt worden.
+Over het gehele periode van de minor is een scrum principe gehanteerd. Daarbij is gewerkt aan sprints van vier weken in verband met de externe presentaties. Via de scrumboard Trello wordt telkens een overzicht gemaakt van de taken. Vervolgens  worden de taken verdeeld over de groepsleden. Dat gaf een overzicht van de taken en kon de voortgang van het project bewaakt worden.
 ![image](https://user-images.githubusercontent.com/121435298/214658174-d75b2d2b-f3ff-41cf-bc67-62cccc6c1c83.png)
 
-Het scrumboard vond ik erg nuttig omdat dit een project is waar veel geprogrammeerd wordt en daarbij is het lastig om gezamenlijk aan de zelfde stuk code te werken. Het scrumboard zorgde ervoor dat ieder groepslid met een taak actief bezig was en kan een overzicht worden gemaakt van de afgeronde taken en de taken die nog moest gebeuren. Ik ben zeer tevreden over de gebruikte methode en voor mijn vervolg groepsprojecten zal ik het nogmaals hanteren.  
+Het scrumboard vond ik erg nuttig omdat dit een project is waar veel geprogrammeerd wordt en daarnaast is het lastig om gezamenlijk aan dezelfde stuk code te werken. Het scrumboard zorgde ervoor dat ieder groepslid met een taak actief bezig was en kan een overzicht worden gemaakt van de afgeronde taken en de taken die nog moest gebeuren. Ik ben zeer tevreden over de gebruikte methode en voor mijn vervolg groepsprojecten zal ik hetzelfde methode hanteren.  
 
 
 ## Domain Knowledge
@@ -45,49 +46,29 @@ Het scrumboard vond ik erg nuttig omdat dit een project is waar veel geprogramme
 
 Tijdens de minor heb ik gewerkt aan het project Food Boost. Aan het begin van het project heb ik eerst de opdracht omschrijving gelezen om de doestelling van het project beter te begrijpen. Het doel van de opdracht is om mensen te helpen hun voeding aan passen. Dat komt omdat in de laatste jaren steeds meer belangstelling is voor gezonder en duurzamer eten. Echter is het niet gemakkelijk om te bepalen of een recept duurzamer of gezonder is. Ieder persoon dient dus zijn eigen voeding en voedingsschema bij te houden om te kunnen concluderen of hij/zij gezonder of duurzamer eet en dat kost te veel tijd en energie. Dat heeft als gevolg dat mensen snel afhaken en zich niet meer bezig houden met een voedingsdieet. Voor de opdracht dient dus een onderzoeksdoel geformuleerd te worden, waar minimaal zes aan wordt gewerkt, die tot een oplossing kan leiden voor de probleemstelling.
 
-#### Actie
-Vervolgens ben ik online gaan oriënteren om te kijken of er al iets bekend is over de probleemstelling. Het eerste waar ik tegen aan liep is de Food Boost challenge. Volgens [Foodboostchallenge.nl](https://foodboostchallenge.nl/), is de challenge aangemaakt om jongen op een slimme manier , op school of tijdens hun dagelijkse leven, gezonder te laten eten en drinken. En dat willen ze bereiken door de ongezonde eetkeuze van jongeren te veranderen naar een gezonde keuze. Met dat informatie, kwam ik al met de voorstel om te voorspellen welke jongeren ongezond eten en om voor die doelgroep recepten te voorspellen die paste bij de dieet die ze kunnen volgen. Al heel snel bleek dat de datasets die we in bezit hadden niet geschikt waren om de voorspelling te kunnen doen. Ook online heb ik geen datasets kunnen vinden die geschikt waren voor dit onderzoeksdoel. Toen ben ik doorgegaan met literatuuronderzoek.
+Ik ben literatuuronderzoek gaan uitvoeren om te kijken wat al bekend is over dit type probleem en of er al oplossingen zijn die niet tot goeie resultaten hebben geleid. Ik heb volgende artikelen gevonden:
 
-Vervolgens heb ik artikelen gevonden waarin een recept recommandatie wordt gedaan aan de hand van Aritifical Intelligence. Een aantal daarvan zijn:
+- [Meerman, I. M., & Intelligentie, B. O. K. (2016). Medical Treatment Recommendation using Random Forest with Soft-Voting.](https://staff.fnwi.uva.nl/b.bredeweg/pdf/BSc/20152016/Meerman.pdf)
 -	[Improving Food Recipe Suggestions With Hierarchical Classification of Food Recipes]( https://www.diva-portal.org/smash/get/diva2:1192855/FULLTEXT02) Fathollahzadeh, P. (2018). Improving Food Recipe Suggestions with Hierarchical Classification of Food Recipes.
 -	[Aanraden van een verscheidenheid aan recepten]( https://libstore.ugent.be/fulltxt/RUG01/002/946/124/RUG01-002946124_2021_0001_AC.pdf) Snyers, L., & Neirinck, P. Aanraden van een verscheidenheid aan recepten.
 -	[Expert System for Recommendations of Healthy Food Recipes using machine learning]( https://web.p.ebscohost.com/abstract?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=13053515&AN=150195513&h=0RLoN%2bYfTvVskMH8ow%2bzAcNAAV9cCyvI%2fDP3sYvOy6RXbPgLfPClcTY5vQi98Cbzd0Xdez%2b94Qn4lIB7SnBRyg%3d%3d&crl=c&resultNs=AdminWebAuth&resultLocal=ErrCrlNotAuth&crlhashurl=login.aspx%3fdirect%3dtrue%26profile%3dehost%26scope%3dsite%26authtype%3dcrawler%26jrnl%3d13053515%26AN%3d150195513) Jhamat, N., Mustafa, G., Arshad, Z., & Abbas, R. (2021). Expert System for Recommendations of Healthy Food Recipes using machine learning. Ilkogretim Online, 20(5).
 
-#### Resultaat
-Nadat iedere groepslid literatuuronderzoek te hebben uitgevoerd, hebben we de onderzoeksdoel geformuleerd en dat is om voor mensen recepten aan te raden op basis van hun voorkeuren. Het is idee is een applicatie te bouwen die een tinder scherm weergeeft waar de gebruiker een aantal recepten naar links (geen voorkeur) of naar rechts (voorkeur) kan schuiven. Aan de hand van de recepten die de gebruiker als voorkeur heeft aangegeven wordt de favoriete keuken van een gebruiker bepaalt aan de hand van de ingrediënten waaruit die recepten bestaan. Vervolgens wordt, aan de hand van de ingrediënten van de gebruiker waar de voorkeurrecepten uit bestaan, een vergelijking gemaakt met de recepten binnen de voorkeurkeuken van dezelfde gebruiker en worden vier recepten aangetoond die het meest overeenkomen met de voorkeurrecepten.
+Tijdens het literatuuronderzoek zijn we tot het idee gekomen om een recept recommendatie te doen en zodoende zijn we tot een onderzoeksvoorstel gekomen. Het idee is om een applicatie te bouwen die een tinder scherm weergeeft waar de gebruiker een aantal recepten naar links (geen voorkeur) of naar rechts (voorkeur) kan schuiven. Aan de hand van de ingrediënten waaruit de recepten bestaan die de gebruiker als voorkeur heeft meegegeven wordt de favoriete keuken van de gebruiker bepaald. Vervolgens worden met die ingrediëten, een vergelijking gemaakt met de recepten binnen de voorkeurkeuken van dezelfde gebruiker en worden vier recepten aangetoond die het meest overeenkomen met de voorkeurrecepten. Daarbij is gebruik  gemaakt van de door school beschikbaar gestelde datasets en die zijn als volgt:
 
-#### Reflectie
-In het begin ben ik niet op een geschikte onderzoeksdoel uitgekomen. Dat is het geval omdat ik te weinig aan literatuuronderzoek had gedaan en te haastig aan het project wou starten. Door alle verzamelde informatie op rijtje te hebben, heb ik een beter idee geregen over het onderzoek en zijn we als groep sneller op een onderzoeksdoel uitgekomen. in het vervolg zal ik geen overhaaste beslissingen nemen zonder voldoende literatuuronderzoek te hebben uitgevoerd en zal me meer verdiepen in het vinden van gerelateerde onderzoek i.p.v. direct starten met het vinden van een oplossing.
-
-
-
-
-
-## Data collection
-### Foodboost
-Voor het foodboost project zijn een aantal datasets beschikbaar gesteld door de opdrachtgever:
 - [recipes.csv](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/recipes.csv) een csv-bestand met de title van de recepten, de benodigde tijd dat voor een recept nodig is om te bereiden, de aantal calorieën van een recept, de aantal sterren dat een recept heeft gekregen, een link naar het recept en een foto van het recept.
 - [ingredients.csv](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/ingredients.csv) een csv-bestand waarin de ingrediënten staan van 71808 recepten.
 - [tags.csv](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/tags.csv) een csv-bestand met de recepten en de bijbehorende tags.
 - [nutritions.csv](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/nutritions.csv) een csv-bestand met de soort nutrition van elke recept en de hoeveelheid daarvan.
 
-### Container project
-- [actions.csv](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/actions.csv)  een csv-bestand met de informatie over waar een container naar toe wordt getransporteerd.
-- [containerlocationinformation.csv](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/containerlocationinformation.csv)
-- [handling.csv](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/handling.csv) een csv bestand met alle handelingen van de containers.
-- [machine.csv](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/machine.csv) een csv-bestand dat dat informatie geeft over de locatie over de containers. de locatie waar de container was en waar de container naar toe wordt verplaatst.
-- [marker.csv](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/marker.csv) een csv-bestand dat de indeling van de terminal definieert. Een marker is een plaats in een stack waar je een container kan plaatsen. Alle posities en lengtes zijn in millimeters gedefinieerd.
-- [stackentry.csv](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/stackentry.csv] een csv-bestand waarin stack entry's worden gedefinieerd. een stack entry wordt uitgevoerd door stackcorrectie of handling
-- [stacks.csv](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/stacks.csv) een csv-bestand dat de indeling van de terminal definieert. Een stack is een specifieke block in een terminal. Alle posities en lengtes zijn in millimeters gedefinieerd.
-- [readme.txt](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/readme.txt)
+
 
 ## Data preparation
 ### Food Boost
 #### [Eigen dataset gesimuleerd](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/zelf%20Dataset%20simuleren%20final%20pdf.pdf)
-#### Situatie
+
 Om het doel te kunnen behalen van het onderzoek, is een geschikte dataset nodig. Aan de hand van die dataset, moet de voorkeurkeuken van elke gebruiker voorspeld kunnen worden. De dataset dient een gebruikerssimulatie te zijn waarin voor elke gebruiker bekend is wat zijn voorkeurkeuken is en de ingrediënten staan van alle recepten die de gebruiker als voorkeur heeft meegegeven.
 
-#### Actie
+
 Als eerst heb ik de datasets op de notebook server geüpload. Vervolgens heb ik `pandas` gebruikt om de datasets in te lezen.
 
 ![image](https://user-images.githubusercontent.com/121435298/209831484-dabaa753-99d1-419b-a80f-27dce8eb3693.png)
@@ -147,10 +128,7 @@ Klik [hier](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/mai
 Later zijn we nog doorgegaan met een andere [dataset](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/final_userdata_min_40.csv) die uit meer rijen bestond en minder kolommen bevatte. Dat laatste komt doordat we de dataset hebben gefilterd en gekozen hebben om door te gaan met de data van wereldkeukens die het meest voorkomen.
 ![image](https://user-images.githubusercontent.com/121435298/211208845-32b2be4e-055b-4fef-b126-58eb6b7ca9f2.png)
 
-
-
-#### Reflectie
-Op het moment dat Milan de gebruikerssimulatie al klaar had staan, had ik het gevoel dat ik over te weinig `pandas` kennis beschik. Ik heb sindsdien meer Datacamp courses uitgevoerd zodat ik mijn programmeer vaardigheden kan verbeteren. Ik heb veel geoefend met dataframes en ik heb nieuwe `pandas` technieken wat mij heeft geholpen verder te werken aan de dataset. Zo heb ik geleerd hoe ik dataframes beter kan bewerken door ze eerst goed te inspecteren en te prepareren en in het vervolg zal ik dezelfde methode aanhouden op het moment dat ik over te weinig kennis beschik om een onderzoek te kunnen uitvoeren. 
+ 
 
 
 ## [Predictive Models en Data Visualization](https://github.com/Ilias-Hazali/Portofolio-ADS-Ilias-Hazali/blob/main/Foodboost%20model%20kiezen%20final%20pdf%20versie.pdf)
